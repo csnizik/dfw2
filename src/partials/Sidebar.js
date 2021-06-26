@@ -1,10 +1,10 @@
 import classNames from 'classnames';
 import React, { useEffect, useRef } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
-  const location = useLocation();
+  //   const location = useLocation();
   //   const { pathname } = location;
   //   const page = pathname.split('/')[1];
 
