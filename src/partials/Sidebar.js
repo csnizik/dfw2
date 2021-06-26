@@ -5,7 +5,7 @@ import Logo from './Logo';
 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
   const location = useLocation();
-  const { pathname } = location;
+  //   const { pathname } = location;
   //   const page = pathname.split('/')[1];
 
   const trigger = useRef(null);
