@@ -17,6 +17,17 @@ import { ReactComponent as SlideRight } from './slide-right.svg';
 import { ReactComponent as ThreeDots } from './three-dots-vert.svg';
 import { ReactComponent as Triangle } from './triangle.svg';
 import { ReactComponent as Video } from './video.svg';
+import { ReactComponent as IconDashboard } from './icon-dashboard.svg';
+import { ReactComponent as IconDownload } from './icon-download.svg';
+import { ReactComponent as IconEdit } from './icon-edit.svg';
+import { ReactComponent as IconExpand } from './icon-expand.svg';
+import { ReactComponent as IconFamilySentiment } from './icon-family-sentiment.svg';
+import { ReactComponent as IconMenuDots } from './icon-menu-dots.svg';
+import { ReactComponent as IconTopMarkets } from './icon-top-markets.svg';
+import { ReactComponent as IconTourismConfidence } from './icon-tourism-confidence.svg';
+import { ReactComponent as IconValueGap } from './icon-value-gap.svg';
+import { ReactComponent as IconWaterAdventures } from './icon-water-adventures.svg';
+import { ReactComponent as IconZoom } from './icon-zoom.svg';
 
 const iconColor = (color) => {
   switch (color) {
@@ -104,17 +115,17 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           )}
         />
       );
-  
-      case 'Download':
-        return (
-          <Download
-            className={classNames(
-              'fill-current',
-              iconSize(size),
-              iconColor(color)
-            )}
-          />
-        );
+
+    case 'Download':
+      return (
+        <Download
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
     case 'Graph':
       return (
         <Graph
@@ -250,6 +261,126 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
     case 'Video':
       return (
         <Video
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconDashboard':
+      return (
+        <IconDashboard
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconDownload':
+      return (
+        <IconDownload
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconEdit':
+      return (
+        <IconEdit
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconExpand':
+      return (
+        <IconExpand
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconFamilySentiment':
+      return (
+        <IconFamilySentiment
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconMenuDots':
+      return (
+        <IconMenuDots
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconTopMarkets':
+      return (
+        <IconTopMarkets
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconTourismConfidence':
+      return (
+        <IconTourismConfidence
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'Icon':
+      return (
+        <Icon
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconValueGap':
+      return (
+        <IconValueGap
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconWaterAdventures':
+      return (
+        <IconWaterAdventures
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            iconColor(color)
+          )}
+        />
+      );
+    case 'IconZoom':
+      return (
+        <IconZoom
           className={classNames(
             'fill-current',
             iconSize(size),
