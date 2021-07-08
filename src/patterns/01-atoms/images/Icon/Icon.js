@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { ReactComponent as ArrowDown } from './arrow-down.svg';
+import { ReactComponent as ArrowRight } from './arrow-right.svg';
 import { ReactComponent as ArrowUp } from './arrow-up.svg';
 import { ReactComponent as Dashboard } from './dashboard.svg';
 import { ReactComponent as Download } from './download.svg';
@@ -95,6 +96,17 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           )}
         />
       );
+      case 'ArrowRight':
+        return (
+          <ArrowRight
+            className={classNames(
+              'fill-current',
+              iconSize(size),
+              color && iconColor(color),
+              classes
+            )}
+          />
+        );
     case 'ArrowUp':
       return (
         <ArrowUp
