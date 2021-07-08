@@ -1,14 +1,6 @@
 import React, { useEffect } from 'react';
+import Home from './patterns/05-pages/Home';
 import { Switch, Route, useLocation } from 'react-router-dom';
-
-// TODO rm unused imports here
-// import './css/style.scss';
-
-// import { focusHandling } from 'cruip-js-toolkit';
-// import './charts/ChartjsConfig';
-
-// Import pages
-import Dashboard from './pages/Dashboard';
 
 function App() {
   const pathName = useLocation().pathname;
@@ -17,14 +9,15 @@ function App() {
     document.querySelector('html').style.scrollBehavior = 'auto';
     window.scroll({ top: 0 });
     document.querySelector('html').style.scrollBehavior = '';
-  }, [pathName]); // triggered on route change
+  }, [pathName]);
 
   return (
     <>
       <Switch>
-        <Route exact path="/">
-          <Dashboard />
+        <Route path={['/','/markets','/water','/value','/confidence','/sentiment']}>
+          <Home pathName={pathName} />
         </Route>
+        <Route path="*" component={Home} />
       </Switch>
     </>
   );
