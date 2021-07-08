@@ -348,16 +348,6 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           )}
         />
       );
-    case 'Icon':
-      return (
-        <Icon
-          className={classNames(
-            'fill-current',
-            iconSize(size),
-            iconColor(color)
-          )}
-        />
-      );
     case 'IconValueGap':
       return (
         <IconValueGap

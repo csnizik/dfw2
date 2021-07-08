@@ -37,7 +37,7 @@ const FamilySentiment = ({ pathName }) => {
           'items-center',
           pathName === '/' ? 'visible' : 'invisible'
         )}>
-        <Icon size="small" color="Navy Sky" type="Video" />
+        <Icon size="small" color="Navy Sky" type="IconFamilySentiment" />
         <NavLink to="/sentiment">
           <h3 className={classNames('hed-3', 'text-blue-dark')}>
             Family Sentiment

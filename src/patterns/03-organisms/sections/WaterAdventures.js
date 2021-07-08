@@ -40,7 +40,7 @@ const WaterAdventures = ({ pathName }) => {
             'items-center',
             pathName === '/' ? 'visible' : 'invisible'
           )}>
-          <Icon size="small" color="Navy Sky" type="Pin" />
+          <Icon size="small" color="Navy Sky" type="IconWaterAdventures" />
           <h3 className={classNames('hed-3', 'text-blue-dark')}>
             Water Adventures
           </h3>
@@ -63,7 +63,7 @@ const WaterAdventures = ({ pathName }) => {
                   'justify-center',
                   'items-center'
                 )}>
-                <Icon color="Navy Sky" size="Small" type="MagnifyingGlass" />
+                <Icon color="Navy Sky" size="Small" type="IconZoom" />
               </button>
             </div>
           </NavLink>

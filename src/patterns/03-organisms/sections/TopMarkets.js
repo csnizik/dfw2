@@ -42,7 +42,7 @@ const TopMarkets = ({ pathName }) => {
             'items-center',
             pathName === '/' ? 'visible' : 'invisible'
           )}>
-          <Icon size="small" color="Navy Sky" type="Network" />
+          <Icon size="small" color="Navy Sky" type="IconTopMarkets" />
           <h3 className={classNames('hed-3', 'text-blue-dark')}>Top Markets</h3>
         </NavLink>
         {pathName === '/' && (
@@ -63,7 +63,7 @@ const TopMarkets = ({ pathName }) => {
                   'justify-center',
                   'items-center'
                 )}>
-                <Icon color="Navy Sky" size="Small" type="MagnifyingGlass" />
+                <Icon color="Navy Sky" size="Small" type="IconZoom" />
               </button>
             </div>
           </NavLink>

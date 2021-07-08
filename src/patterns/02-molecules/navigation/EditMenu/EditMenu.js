@@ -44,7 +44,7 @@ function EditMenu({ children, ...rest }) {
         onClick={() => setDropdownOpen(!dropdownOpen)}
         aria-expanded={dropdownOpen}>
         <span className="sr-only">Menu</span>
-        <Icon size="s" color="NavySky" type="ThreeDots" />
+        <Icon size="s" color="NavySky" type="IconMenuDots" />
       </button>
       <Transition
         show={dropdownOpen}

@@ -89,7 +89,7 @@ function UserMenu({ children, ...rest }) {
         <button
           className={classNames('')}
           onClick={() => setLoggedIn(false)}></button>
-        {loggedIn && <Icon size="m" type="SlideRight" />}
+        {loggedIn && <Icon size="m" type="IconExpand" />}
       </button>
       <Transition
         show={dropdownOpen}
@@ -143,7 +143,7 @@ function UserMenu({ children, ...rest }) {
                 'items-center',
                 !loggedIn ? 'hidden' : ''
               )}>
-              <Icon size="xs" color="Navy Sky" type="Pencil" />
+              <Icon size="xs" color="Navy Sky" type="IconEdit" />
               <p
                 className={classNames(
                   'text-sm',
@@ -237,7 +237,7 @@ function UserMenu({ children, ...rest }) {
               onClick={() => setLoggedIn(!loggedIn)}>
               {loggedIn ? 'Logout' : 'Login'}
             </p>
-            {loggedIn && <Icon size="m" type="SlideRight" color="teal" />}
+            {loggedIn && <Icon size="m" type="IconExpand" color="teal" />}
           </button>
         </div>
       </Transition>

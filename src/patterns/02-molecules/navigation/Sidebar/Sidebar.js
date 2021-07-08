@@ -117,7 +117,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
                 <div className={classNames('listItemIcon', 'pr-3')}>
                   <NavLink exact to="/">
                     <Icon
-                      type="Dashboard"
+                      type="IconDashboard"
                       size="m"
                       color={pathName === '/' ? 'black' : 'teal'}
                     />
@@ -162,7 +162,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
                 <div className={classNames('listItemIcon', 'pr-3')}>
                   <NavLink exact to="/markets">
                     <Icon
-                      type="Network"
+                      type="IconTopMarkets"
                       size="m"
                       color={pathName === '/markets' ? 'black' : 'teal'}
                     />
@@ -207,7 +207,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
                 <div className={classNames('listItemIcon', 'pr-3')}>
                   <NavLink exact to="/water">
                     <Icon
-                      type="Pin"
+                      type="IconWaterAdventures"
                       size="m"
                       color={pathName === '/water' ? 'black' : 'teal'}
                     />
@@ -253,7 +253,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
                 <div className={classNames('listItemIcon', 'pr-3')}>
                   <NavLink exact to="/value">
                     <Icon
-                      type="Graph"
+                      type="IconValueGap"
                       size="m"
                       color={pathName === '/value' ? 'black' : 'teal'}
                     />
@@ -299,7 +299,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
                 <div className={classNames('listItemIcon', 'pr-3')}>
                   <NavLink exact to="/confidence">
                     <Icon
-                      type="Pie"
+                      type="IconTourismConfidence"
                       size="m"
                       color={pathName === '/confidence' ? 'black' : 'teal'}
                     />
@@ -344,7 +344,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
                 <div className={classNames('listItemIcon', 'pr-3')}>
                   <NavLink exact to="/sentiment">
                     <Icon
-                      type="Video"
+                      type="IconFamilySentiment"
                       size="m"
                       color={pathName === '/sentiment' ? 'black' : 'teal'}
                     />
@@ -403,7 +403,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
                   'sm:space-x-3',
                 )}>
                 <p className={classNames('hidden', 'sm:block')}>Download</p>
-                <Icon size="m" type="Download" />
+                <Icon size="m" type="IconDownload" />
               </div>
             </button>
           </div>
@@ -438,7 +438,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
               <div
                 className={classNames('cursor-pointer')}
                 onClick={() => setSidebarOpen(!sidebarOpen)}>
-                <Icon type="SlideRight" />
+                <Icon type="IconExpand" />
               </div>
             </button>
           </div>

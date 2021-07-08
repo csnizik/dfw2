@@ -41,7 +41,7 @@ const TourismConfidence = ({ pathName }) => {
             'items-center',
             pathName === '/' ? 'visible' : 'invisible'
           )}>
-          <Icon size="small" color="Navy Sky" type="Pie" />
+          <Icon size="small" color="Navy Sky" type="IconTourismConfidence" />
           <h3 className={classNames('hed-3', 'text-blue-dark')}>
             Tourism Confidence
           </h3>
@@ -64,7 +64,7 @@ const TourismConfidence = ({ pathName }) => {
                   'justify-center',
                   'items-center'
                 )}>
-                <Icon color="Navy Sky" size="Small" type="MagnifyingGlass" />
+                <Icon color="Navy Sky" size="Small" type="IconZoom" />
               </button>
             </div>
           </NavLink>
