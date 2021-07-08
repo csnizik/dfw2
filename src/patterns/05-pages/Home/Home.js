@@ -35,7 +35,7 @@ const Home = ({ pathName }) => {
         )}>
         <Header pathName={pathName} />
         <main>
-          <div className={classNames('m-6', 'grid', 'grid-cols-3', 'gap-6')}>
+          <div className={classNames('m-6', pathName === '/' ? 'grid' : '', pathName === '/' ? 'grid-cols-3' : '', pathName === '/' ? 'gap-6' : '')}>
             {/* Cards */}
             {pathName === '/' && <AtAGlance pathName={pathName} />}
             {(pathName === '/' || pathName === '/markets') && (
