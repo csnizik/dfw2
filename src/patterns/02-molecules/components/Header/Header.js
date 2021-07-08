@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
-import UserMenu from '../navigation/UserMenu/UserMenu';
+import UserMenu from '../../navigation/UserMenu/UserMenu';
 
 function Header({ pathName }) {
   const pageName = (pathName) => {

@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import './Logo.css';
-
 import { ReactComponent as DSFWLogo } from './DestinFWBLogo.svg';
 
 const logoClasses = (size) =>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Home from './patterns/05-pages/Home';
+import Home from './patterns/05-pages/Home/Home'
 import { Switch, Route, useLocation } from 'react-router-dom';
 
 function App() {

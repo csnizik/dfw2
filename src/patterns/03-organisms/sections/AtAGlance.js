@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { useState } from 'react';
-import Metric from '../../02-molecules/blocks/Metric';
+import Metric from '../../02-molecules/blocks/Metric/Metric'
 import Icon from '../../01-atoms/images/Icon/Icon';
 
 const AtAGlance = ({ pathName, ...props }) => {

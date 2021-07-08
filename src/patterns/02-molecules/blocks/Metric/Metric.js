@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import Icon from '../../../01-atoms/images/Icon';
+import Icon from '../../../01-atoms/images/Icon/Icon';
 
 const Metric = ({ value, trend, size, ...props }) => {
   return (

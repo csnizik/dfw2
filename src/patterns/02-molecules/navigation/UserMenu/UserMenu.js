@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../../../../utilities/Transition';
-import Icon from '../../../01-atoms/images/Icon';
+import Icon from '../../../01-atoms/images/Icon/Icon';
 import classNames from 'classnames';
 
 function UserMenu({ children, ...rest }) {
