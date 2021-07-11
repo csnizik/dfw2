@@ -63,8 +63,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
           'fixed',
           'sm:relative',
           'inset-0',
-          sidebarOpen ? `w-${widthFull}` : `w-${widthCollapsed}`,
           `sm:w-${widthFull}`,
+          sidebarOpen ? `sm:w-${widthFull}` : `w-${widthCollapsed}`,
           'transform',
           'sm:transform-none',
           'origin-left',
@@ -400,7 +400,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
                   'sm:px-5',
                   'sm:mt-3',
                   'sm:space-between',
-                  'sm:space-x-3',
+                  'sm:space-x-3'
                 )}>
                 <p className={classNames('hidden', 'sm:block')}>Download</p>
                 <Icon size="m" type="IconDownload" />
