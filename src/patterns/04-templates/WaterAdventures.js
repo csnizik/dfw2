@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from '../03-organisms/blocks/Card/Card';
 import Chart from '../03-organisms/blocks/Chart/Chart';
 import classNames from 'classnames';
