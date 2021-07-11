@@ -110,10 +110,15 @@ function UserMenu({ children, ...rest }) {
           'p-5',
           'flex'
         )}
-        enter="transition ease-out duration-200 transform"
-        enterStart="opacity-0 -translate-y-2"
-        enterEnd="opacity-100 translate-y-0"
-        leave="transition ease-out duration-200"
+        enter={classNames(
+          'transition',
+          'ease-out',
+          'duration-200',
+          'transform'
+        )}
+        enterStart={classNames('opacity-0', '-translate-y-2')}
+        enterEnd={classNames('opacity-100', 'translate-y-0')}
+        leave={classNames('transition', 'ease-out', 'duration-200')}
         leaveStart="opacity-100"
         leaveEnd="opacity-0">
         <div

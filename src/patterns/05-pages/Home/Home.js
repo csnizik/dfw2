@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Sidebar from '../../03-organisms/navigation/Sidebar/Sidebar';
 import Header from '../../03-organisms/components/Header/Header'
 import AtAGlance from '../../04-templates/AtAGlance';
@@ -10,13 +10,13 @@ import FamilySentiment from '../../04-templates/FamilySentiment';
 import classNames from 'classnames';
 
 const Home = ({ pathName }) => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  // const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className={classNames('flex', 'h-screen', 'overflow-hidden')}>
       <Sidebar
-        sidebarOpen={sidebarOpen}
-        setSidebarOpen={setSidebarOpen}
+        // sidebarOpen={sidebarOpen}
+        // setSidebarOpen={setSidebarOpen}
         pathName={pathName}
       />
       <div
