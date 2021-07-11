@@ -5,8 +5,6 @@ import Icon from '../../../01-atoms/images/Icon/Icon';
 import classNames from 'classnames';
 
 function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
-  const widthCollapsed = '20'; // Tailwind value for collapsed width on <640px breakpoints
-  const widthFull = '64'; // Tailwind value for full width on all breakpoints
   const trigger = useRef(null);
   const sidebar = useRef(null);
 
@@ -63,9 +61,9 @@ function Sidebar({ sidebarOpen, setSidebarOpen, pathName }) {
           'fixed',
           'sm:relative',
           'inset-0',
-          `sm:w-${widthFull}`,
+          'w-20',
           // sidebarOpen ? `w-${widthFull}` : `w-${widthCollapsed}`,
-          sidebarOpen ? 'w-64' : 'w-20',
+          // !sidebarOpen ? 'w-20' : 'w-20',
           'transform',
           'sm:transform-none',
           'origin-left',
