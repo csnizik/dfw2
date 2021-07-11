@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import Card from '../03-organisms/blocks/Card/Card';
-import { Link, NavLink } from 'react-router-dom';
-import EditMenu from '../03-organisms/navigation/EditMenu/EditMenu';
 import Chart from '../03-organisms/blocks/Chart/Chart';
-import Icon from '../01-atoms/images/Icon/Icon';
 import classNames from 'classnames';
 import CardHeading from '../02-molecules/CardHeading';
 

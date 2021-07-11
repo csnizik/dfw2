@@ -3,12 +3,10 @@ import classNames from 'classnames';
 import InfoCard from './InfoCard';
 
 function renderCard(card) {
-    const a = 'b';
     return (
         <InfoCard card={card}/>
     )
 }
-
 
 const InfoCardGroup = ({ cards }) => {
     return (

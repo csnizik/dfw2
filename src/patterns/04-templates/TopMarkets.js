@@ -2,10 +2,6 @@ import classNames from 'classnames';
 // import React, { useState } from 'react';
 import React from 'react';
 import Chart from '../03-organisms/blocks/Chart/Chart';
-import Icon from '../01-atoms/images/Icon/Icon';
-import { Link, NavLink } from 'react-router-dom';
-import EditMenu from '../03-organisms/navigation/EditMenu/EditMenu';
-import InfoCard from '../03-organisms/blocks/InfoCard/InfoCard';
 import InputSlider from '../03-organisms/components/InputSlider/InputSlider';
 import Table from '../03-organisms/blocks/Table/Table';
 import Card from '../03-organisms/blocks/Card/Card';
@@ -17,7 +13,15 @@ const TopMarkets = ({ pathName }) => {
   return (
     <>
       <Card pathName={pathName} cardName="markets" cols="2">
-        <CardHeading cardPath="/markets" cardTitle="Top Markets" pathName={pathName} iconType="IconTopMarkets" cardSubtitle="Increased arrivals from key markets and increased visitor spending per market"/>
+        <CardHeading
+          cardPath="/markets"
+          cardTitle="Top Markets"
+          pathName={pathName}
+          iconType="IconTopMarkets"
+          cardSubtitle="Increased arrivals from key markets and increased visitor spending per market"
+        />
+        {pathName === '/markets' && <div className={classNames('w-64','mx-auto')}>
+        <InputSlider /></div>}
         <div
           id="marketsChart"
           className={classNames(
