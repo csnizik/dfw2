@@ -2,23 +2,32 @@ import React, { useState } from 'react';
 import Icon from '../../../01-atoms/images/Icon/Icon';
 import classNames from 'classnames';
 
-const ExpandableCard = ({ title, ...props }) => {
+const InfoCard = ({ card }) => {
   const [cardExpanded, setCardExpanded] = useState(false);
 
   return (
-    <div className={classNames('flex', 'flex-col', 'space-y-4','rounded-lg',
-          'bg-white',
-          'shadow',
+    <div
+      className={classNames(
+        'flex',
+        'flex-col',
+        'space-y-4',
+        'rounded-lg',
+        'bg-white',
+        'shadow',
         'p-3',
-    'transform','transition-all','duration-200')}>
+        'transform',
+        'transition-all',
+        'duration-200'
+      )}>
       <div
         className={classNames(
           'flex',
           'flex-row',
-          
-          'justify-between'
-        )}>
-        <h3 className={classNames('hed3', 'text-black')}>{title}</h3>
+          'justify-between',
+          'cursor-pointer'
+        )}
+        onClick={() => setCardExpanded(!cardExpanded)}>
+        <h3 className={classNames('hed3', 'text-black')}>{card.title}</h3>
         <button
           id="expandToggle"
           className={classNames(
@@ -34,9 +43,9 @@ const ExpandableCard = ({ title, ...props }) => {
           </div>
         </button>
       </div>
-        {cardExpanded && <div className={classNames('')}>{props.children}</div>}
+      {cardExpanded && <div className={classNames('')}>{card.data}</div>}
     </div>
   );
 };
 
-export default ExpandableCard;
+export default InfoCard;
