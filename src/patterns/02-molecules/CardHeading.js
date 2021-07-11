@@ -1,26 +1,19 @@
-import classNames from 'classnames';
-// import React, { useState } from 'react';
 import React from 'react';
-import Chart from '../../02-molecules/blocks/Chart/Chart';
-import Icon from '../../01-atoms/images/Icon/Icon';
-import { Link, NavLink } from 'react-router-dom';
-import EditMenu from '../../02-molecules/navigation/EditMenu/EditMenu';
+import classNames from 'classnames';
+import Icon from '../01-atoms/images/Icon/Icon';
+import Heading from '../01-atoms/typography/Heading';
+import EditMenu from '../03-organisms/navigation/EditMenu/EditMenu';
+import { Link } from 'react-router-dom';
 
-const TourismConfidence = ({ pathName }) => {
-  // const [cardExpanded, setCardExpanded] = useState(false);
+const CardHeading = ({
+  cardPath,
+  cardTitle,
+  cardSubtitle,
+  pathName,
+  iconType,
+}) => {
   return (
-    <div
-      className={classNames(
-        'flex',
-        'flex-col',
-        'col-span-3',
-        pathName !== '/confidence' ? 'lg:col-span-1' : '',
-        'p-3',
-        'rounded-lg',
-        'shadow',
-        'bg-white',
-        pathName === '/confidence' ? 'h-screen' : ''
-      )}>
+    <>
       <div
         className={classNames(
           'flex',
@@ -30,7 +23,8 @@ const TourismConfidence = ({ pathName }) => {
           'min-w-full',
           'justify-between'
         )}>
-        <NavLink to="/confidence"
+        <Link
+          to={cardPath}
           className={classNames(
             'pt-4',
             'pl-4',
@@ -41,13 +35,13 @@ const TourismConfidence = ({ pathName }) => {
             'items-center',
             pathName === '/' ? 'visible' : 'invisible'
           )}>
-          <Icon size="small" color="Navy Sky" type="IconTourismConfidence" />
-          <h3 className={classNames('hed-3', 'text-blue-dark')}>
-            Tourism Confidence
-          </h3>
-        </NavLink>
+          <Icon size="small" color="Navy Sky" type={iconType} />
+          <Heading size="h3" color="blue-dark">
+            {cardTitle}
+          </Heading>
+        </Link>
         {pathName === '/' && (
-          <NavLink to="/confidence">
+          <Link to={cardPath}>
             <div className={classNames('self-end', 'flex', 'items-center')}>
               <button
                 className={classNames(
@@ -67,9 +61,9 @@ const TourismConfidence = ({ pathName }) => {
                 <Icon color="Navy Sky" size="Small" type="IconZoom" />
               </button>
             </div>
-          </NavLink>
+          </Link>
         )}
-        {pathName === '/confidence' && (
+        {pathName === cardPath && (
           <EditMenu className="relative inline-flex">
             <li>
               <Link
@@ -101,40 +95,10 @@ const TourismConfidence = ({ pathName }) => {
           'text-sm',
           pathName === '/' ? 'visible' : 'invisible'
         )}>
-        Measures local sentiment towards tourism
+        {cardSubtitle}
       </p>
-      <div id="confidenceChart" className={classNames('self-center')}>
-        <Chart
-          chartType="PieChart"
-          data={[
-            ['Tourism Sentiment', 'Percent'],
-            ['Against of tourists', 20],
-            ['Accepting of tourists', 80],
-          ]}
-          formatters={{
-            type: 'DateFormat',
-            column: 0,
-            options: {
-              pattern: 'MMM yyyy',
-            },
-          }}
-          options={{
-            width: pathName === '/' ? 220 : 440,
-            height: pathName === '/' ? 330 : 500,
-            pieHole: 0.5,
-            pieSliceText: 'Percent',
-            pieSliceTextStyle: {
-              color: 'black',
-            },
-            legend: { position: 'none' },
-            colors: ['#48AAED', '#77DBDB', '#FCB3B1'],
-          }}
-          rootProps={{ 'data-testid': '1' }}
-        />
-      </div>
-      <div className={classNames('')} id="confidenceExpanded"></div>
-    </div>
+    </>
   );
 };
 
-export default TourismConfidence;
+export default CardHeading;

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Sidebar from '../../02-molecules/navigation/Sidebar/Sidebar';
-import Header from '../../02-molecules/components/Header/Header'
-import AtAGlance from '../../03-organisms/sections/AtAGlance'
-import TopMarkets from '../../03-organisms/sections/TopMarkets';
-import WaterAdventures from '../../03-organisms/sections/WaterAdventures';
-import ValueGap from '../../03-organisms/sections/ValueGap';
-import TourismConfidence from '../../03-organisms/sections/TourismConfidence';
-import FamilySentiment from '../../03-organisms/sections/FamilySentiment';
+import Sidebar from '../../03-organisms/navigation/Sidebar/Sidebar';
+import Header from '../../03-organisms/components/Header/Header'
+import AtAGlance from '../../04-templates/AtAGlance';
+import TopMarkets from '../../04-templates/TopMarkets';
+import WaterAdventures from '../../04-templates/WaterAdventures';
+import ValueGap from '../../04-templates/ValueGap';
+import TourismConfidence from '../../04-templates/TourismConfidence';
+import FamilySentiment from '../../04-templates/FamilySentiment';
 import classNames from 'classnames';
 
 const Home = ({ pathName }) => {
