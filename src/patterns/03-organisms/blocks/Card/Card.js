@@ -2,15 +2,22 @@ import React from 'react';
 import classNames from 'classnames';
 
 const Card = ({ pathName, cardPath, cols, transparent, ...props }) => {
-  const dynamicWidth = `lg:col-span-${cols}`;
-
   return (
     <div
       className={classNames(
         'flex',
         'flex-col',
         'col-span-3',
-        pathName !== cardPath ? dynamicWidth : '',
+        // pathName !== cardPath ? `lg:col-span-${cols}` : '',
+        pathName !== cardPath
+          ? cols === 1
+            ? 'lg:col-span-1'
+            : cols === 2
+            ? 'lg:col-span-2'
+            : cols === 3
+            ? 'lg:col-span-3'
+            : ''
+          : '',
         pathName === cardPath ? 'h-full' : '',
         transparent ? 'p-0' : 'p-3',
         transparent ? '' : 'rounded-lg',
