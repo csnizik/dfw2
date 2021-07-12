@@ -7,10 +7,9 @@ const Card = ({ pathName, cardName, cols, transparent, ...props }) => {
       className={classNames(
         'flex',
         'flex-col',
-        'col-span-3',
-        pathName !== `/${cardName}` ? `lg:col-span-${cols}` : '',
-        pathName !== `/${cardName}` ? `xl:col-span-${cols}` : '',
-        pathName !== `/${cardName}` ? `2xl:col-span-${cols}` : '',
+        `lg:col-span-${cols}`,
+        // 'col-span-3',
+        // pathName !== `/${cardName}` ? `lg:col-span-${cols}` : '',
         pathName === `/${cardName}` ? 'h-full' : '',
         transparent ? 'p-0' : 'p-3',
         transparent ? '' : 'rounded-lg',
