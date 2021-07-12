@@ -8,7 +8,7 @@ const AtAGlance = () => {
   const [cardExpanded, setCardExpanded] = useState(false);
 
   return (
-    <Card pathName="/" cardName="glance" cols="3">
+    <Card pathName="/" cardPath={""} cols="3">
       <h2 className={classNames('hed2', 'col-span-3')}>At a Glance</h2>
       <div
         className={classNames(

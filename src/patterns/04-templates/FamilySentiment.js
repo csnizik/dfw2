@@ -19,7 +19,7 @@ import 'video-react/dist/video-react.css';
 
 const FamilySentiment = ({ pathName }) => {
   return (
-    <Card pathName={pathName} cardName="sentiment" cols="1" transparent>
+    <Card pathName={pathName} cardPath="/sentiment" cols="1" transparent>
       <div className={classNames('flex','flex-col','space-between','space-y-5')}>
         <div
           className={classNames(

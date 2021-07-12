@@ -12,7 +12,7 @@ const TopMarkets = ({ pathName }) => {
   // const [cardExpanded, setCardExpanded] = useState(false);
   return (
     <>
-      <Card pathName={pathName} cardName="markets" cols="2">
+      <Card pathName={pathName} cardPath="/markets" cols="2">
         <CardHeading
           cardPath="/markets"
           cardTitle="Top Markets"

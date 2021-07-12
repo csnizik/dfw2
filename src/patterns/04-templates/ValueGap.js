@@ -7,7 +7,7 @@ import CardHeading from '../02-molecules/CardHeading';
 const ValueGap = ({ pathName }) => {
   // const [cardExpanded, setCardExpanded] = useState(false);
   return (
-    <Card pathName={pathName} cardName="value" cols="1">
+    <Card pathName={pathName} cardPath="/value" cols="1">
       <CardHeading
         cardPath="/value"
         cardTitle="Value Gap"

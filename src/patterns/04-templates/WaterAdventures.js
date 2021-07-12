@@ -7,9 +7,17 @@ import CardHeading from '../02-molecules/CardHeading';
 const WaterAdventures = ({ pathName }) => {
   // const [cardExpanded, setCardExpanded] = useState(false);
   return (
-    <Card pathName={pathName} cardName='water' cols='1'>
-      <CardHeading cardPath="/water" cardTitle="Water Adventures" pathName={pathName} iconType="IconWaterAdventures" cardSubtitle="Increase in water-based family adventures taken" />
-      <div id="waterChart" className={classNames(pathName=== '/' ? 'w-full' : 'w-2/3','m-auto')}>
+    <Card pathName={pathName} cardPath="/water" cols="1">
+      <CardHeading
+        cardPath="/water"
+        cardTitle="Water Adventures"
+        pathName={pathName}
+        iconType="IconWaterAdventures"
+        cardSubtitle="Increase in water-based family adventures taken"
+      />
+      <div
+        id="waterChart"
+        className={classNames(pathName === '/' ? 'w-full' : 'w-2/3', 'm-auto')}>
         <Chart
           chartType="Bar"
           data={[
@@ -31,8 +39,8 @@ const WaterAdventures = ({ pathName }) => {
             bar: { groupWidth: '100%' },
             legend: { position: pathName === '/water' ? 'right' : 'none' },
             hAxis: {
-              title: pathName === '/water' ? '# of adventures' : ''
-            }
+              title: pathName === '/water' ? '# of adventures' : '',
+            },
           }}
           rootProps={{ 'data-testid': '1' }}
         />

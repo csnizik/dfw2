@@ -7,7 +7,7 @@ import CardHeading from '../02-molecules/CardHeading';
 const TourismConfidence = ({ pathName }) => {
   // const [cardExpanded, setCardExpanded] = useState(false);
   return (
-    <Card pathName={pathName} cardName="confidence" cols="1">
+    <Card pathName={pathName} cardPath="/confidence" cols="1">
       <CardHeading
         cardPath="/confidence"
         cardTitle="Tourism Confidence"

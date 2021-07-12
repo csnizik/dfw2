@@ -1,20 +1,19 @@
 import React from 'react';
 import classNames from 'classnames';
 
-const Card = ({ pathName, cardName, cols, transparent, ...props }) => {
+const Card = ({ pathName, cardPath, cols, transparent, ...props }) => {
   return (
     <div
       className={classNames(
         'flex',
         'flex-col',
-        pathName === '/' ? `col-span-3 lg:col-span-${cols}` : '',
-        // 'col-span-3',
-        // pathName !== `/${cardName}` ? `lg:col-span-${cols}` : '',
-        pathName === `/${cardName}` ? 'h-full' : '',
+        'col-span-3',
+        pathName !== cardPath ? `lg:col-span-${cols}` : '',
+        pathName === cardPath ? 'h-full' : '',
         transparent ? 'p-0' : 'p-3',
         transparent ? '' : 'rounded-lg',
         transparent ? '' : 'shadow',
-        transparent ? 'bg-transparent' : 'bg-white'
+          transparent ? 'bg-transparent' : 'bg-white',
         // 'hidden'
       )}>
       {props.children}
