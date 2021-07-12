@@ -9,9 +9,8 @@ import InfoCardContainer from '../03-organisms/blocks/InfoCard/InfoCardContainer
 import CardHeading from '../02-molecules/CardHeading';
 
 const TopMarkets = ({ pathName }) => {
-  // const [cardExpanded, setCardExpanded] = useState(false);
   return (
-    <>
+    <div className={classNames('col-span-3', 'lg:col-span-2')}>
       <Card pathName={pathName} cardPath="/markets" cols="2">
         <CardHeading
           cardPath="/markets"
@@ -20,8 +19,11 @@ const TopMarkets = ({ pathName }) => {
           iconType="IconTopMarkets"
           cardSubtitle="Increased arrivals from key markets and increased visitor spending per market"
         />
-        {pathName === '/markets' && <div className={classNames('w-64','mx-auto')}>
-        <InputSlider /></div>}
+        {pathName === '/markets' && (
+          <div className={classNames('w-64', 'mx-auto')}>
+            <InputSlider />
+          </div>
+        )}
         <div
           id="marketsChart"
           className={classNames(
@@ -93,7 +95,7 @@ const TopMarkets = ({ pathName }) => {
           />
         </div>
       )}
-    </>
+    </div>
   );
 };
 

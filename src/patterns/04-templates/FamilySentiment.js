@@ -19,110 +19,126 @@ import 'video-react/dist/video-react.css';
 
 const FamilySentiment = ({ pathName }) => {
   return (
-    <Card pathName={pathName} cardPath="/sentiment" cols="1" transparent>
-      <div className={classNames('flex','flex-col','space-between','space-y-5')}>
+    <div className={classNames('col-span-3', 'lg:col-span-1')}>
+      <Card pathName={pathName} cardPath="/sentiment" transparent>
         <div
           className={classNames(
             'flex',
-            'self-start',
-            'space-x-3',
-            'justify-center',
-            'items-center',
-            pathName === '/' ? 'visible' : 'invisible'
+            'flex-col',
+            'space-between',
+            'space-y-5'
           )}>
-          <Icon size="small" color="Navy Sky" type="IconFamilySentiment" />
-          <NavLink to="/sentiment">
-            <h3 className={classNames('hed-3', 'text-blue-dark')}>
-              Family Sentiment
-            </h3>
-          </NavLink>
-        </div>
+          <div
+            className={classNames(
+              'flex',
+              'self-start',
+              'space-x-3',
+              'justify-center',
+              'items-center',
+              pathName === '/' ? 'visible' : 'invisible'
+            )}>
+            <Icon size="small" color="Navy Sky" type="IconFamilySentiment" />
+            <NavLink to="/sentiment">
+              <h3 className={classNames('hed-3', 'text-blue-dark')}>
+                Family Sentiment
+              </h3>
+            </NavLink>
+          </div>
 
-        <div
-          className={classNames(
-            'bg-white',
-            'rounded-lg',
-            'flex',
-            'flex-row',
-            'pr-4',
-            'items-center',
-            'space-x-4',
-            'shadow',
-            pathName === '/sentiment' ? 'w-96' : ''
-          )}>
           <div
-            className={classNames('w-48', 'rounded-l-lg', 'overflow-y-hidden')}>
-            <Player
-              src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              poster={PosterOne}
-              height="220"
-              muted>
-              <BigPlayButton position="center" />
-              <LoadingSpinner />
-              <ControlBar
-                autoHide={false}
-                disableDefaultControls
-                className={classNames('flex', 'justify-between')}>
-                <PlayToggle />
-                <VolumeMenuButton vertical />
-                <FullscreenToggle />
-              </ControlBar>
-            </Player>
-          </div>
-          <h3
             className={classNames(
-              'hed3',
-              'w-48',
-              'text-overflow: ellipsis',
-              'leading-tight'
+              'bg-white',
+              'rounded-lg',
+              'flex',
+              'flex-row',
+              'pr-4',
+              'items-center',
+              'space-x-4',
+              'shadow',
+              pathName === '/sentiment' ? 'w-96' : ''
             )}>
-            Mom Panel Product Test Image is great
-          </h3>
-        </div>
-        <div
-          className={classNames(
-            'bg-white',
-            'rounded-lg',
-            'flex',
-            'flex-row',
-            'pr-4',
-            'items-center',
-            'space-x-4',
-            'shadow',
-            pathName === '/sentiment' ? 'w-96' : ''
-          )}>
+            <div
+              className={classNames(
+                'w-48',
+                'rounded-l-lg',
+                'overflow-y-hidden'
+              )}>
+              <Player
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                poster={PosterOne}
+                height="220"
+                muted>
+                <BigPlayButton position="center" />
+                <LoadingSpinner />
+                <ControlBar
+                  autoHide={false}
+                  disableDefaultControls
+                  className={classNames('flex', 'justify-between')}>
+                  <PlayToggle />
+                  <VolumeMenuButton vertical />
+                  <FullscreenToggle />
+                </ControlBar>
+              </Player>
+            </div>
+            <h3
+              className={classNames(
+                'hed3',
+                'w-48',
+                'text-overflow: ellipsis',
+                'leading-tight'
+              )}>
+              Mom Panel Product Test Image is great
+            </h3>
+          </div>
           <div
-            className={classNames('w-48', 'rounded-l-lg', 'overflow-y-hidden')}>
-            <Player
-              src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              poster={PosterTwo}
-              height="220"
-              muted>
-              <BigPlayButton position="center" />
-              <LoadingSpinner />
-              <ControlBar
-                autoHide={false}
-                disableDefaultControls
-                className={classNames('flex', 'justify-between')}>
-                <PlayToggle />
-                <VolumeMenuButton />
-                <FullscreenToggle />
-              </ControlBar>
-            </Player>
-          </div>
-          <h3
             className={classNames(
-              'hed3',
-              'w-48',
-              'text-overflow: ellipsis',
-              'leading-tight'
+              'bg-white',
+              'rounded-lg',
+              'flex',
+              'flex-row',
+              'pr-4',
+              'items-center',
+              'space-x-4',
+              'shadow',
+              pathName === '/sentiment' ? 'w-96' : ''
             )}>
-            Atlanta Mom Feedback
-          </h3>
+            <div
+              className={classNames(
+                'w-48',
+                'rounded-l-lg',
+                'overflow-y-hidden'
+              )}>
+              <Player
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                poster={PosterTwo}
+                height="220"
+                muted>
+                <BigPlayButton position="center" />
+                <LoadingSpinner />
+                <ControlBar
+                  autoHide={false}
+                  disableDefaultControls
+                  className={classNames('flex', 'justify-between')}>
+                  <PlayToggle />
+                  <VolumeMenuButton />
+                  <FullscreenToggle />
+                </ControlBar>
+              </Player>
+            </div>
+            <h3
+              className={classNames(
+                'hed3',
+                'w-48',
+                'text-overflow: ellipsis',
+                'leading-tight'
+              )}>
+              Atlanta Mom Feedback
+            </h3>
+          </div>
+          <div className={classNames('')} id="sentimentExpanded"></div>
         </div>
-        <div className={classNames('')} id="sentimentExpanded"></div>
-      </div>
-    </Card>
+      </Card>
+    </div>
   );
 };
 
