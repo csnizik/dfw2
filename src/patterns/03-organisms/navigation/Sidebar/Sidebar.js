@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Transition from '../../../../utilities/Transition';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../../01-atoms/images/Logo/Logo';
 import Icon from '../../../01-atoms/images/Icon/Icon';
