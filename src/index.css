@@ -23,3 +23,37 @@
 }
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .shadow-card {
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  }
+  .rounded-20px {
+    border-radius: 20px;
+  }
+  .rounded-t-20px {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .rounded-tr-20px {
+    border-top-right-radius: 20px;
+  }
+  .rounded-bl-20px {
+    border-bottom-left-radius: 20px;
+  }
+
+  .speech-bubble::after {
+    position: absolute;
+    content: '';
+  }
+  .speech-bubble-tail::after{
+    border-top: 1px solid rgba(229,229,229,1);
+    border-right: 1px solid rgba(229,229,229,1);
+    background-color: rgba(255,255,255,1);
+    left: 85%;
+    top: -6px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(315deg);
+  }
+}

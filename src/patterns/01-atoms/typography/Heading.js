@@ -56,7 +56,7 @@ const renderHeading = ({ size, color, classes, ...props }) => {
       );
     case 'h3':
       return (
-        <h3 className={classNames('hed3', headingColor(color, classes))}>
+        <h3 className={classNames('hed3', 'text-black')}>
           {props.children}
         </h3>
       );

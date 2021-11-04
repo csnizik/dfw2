@@ -39,7 +39,7 @@ const FamilySentiment = ({ pathName }) => {
             )}>
             <Icon size="small" color="Navy Sky" type="IconFamilySentiment" />
             <NavLink to="/sentiment">
-              <h3 className={classNames('hed-3', 'text-blue-dark')}>
+              <h3 className={classNames('hed3', 'text-black')}>
                 Family Sentiment
               </h3>
             </NavLink>

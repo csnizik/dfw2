@@ -42,7 +42,9 @@ function EditMenu({ children, ...rest }) {
           'text-gray-400',
           'hover:text-gray-500',
           'rounded-full',
-          dropdownOpen && 'bg-gray-100 text-gray-500'
+          'mr-5',
+          'mt-3',
+          // dropdownOpen && 'bg-gray-100 text-gray-500'
         )}
         aria-haspopup="true"
         onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -57,16 +59,17 @@ function EditMenu({ children, ...rest }) {
           'origin-top-right',
           'z-10',
           'absolute top-full',
-          'right-4',
-          'w-44',
+          'right-2',
+          'w-36',
           'bg-white',
           'border',
           'border-gray-200',
           'py-1.5',
-          'rounded',
-          'shadow-lg',
-          'overflow-hidden',
-          'mt-1'
+          'rounded-md',
+          'mt-4',
+          'speech-bubble',
+          'speech-bubble-tail',
+          'bg-white-dark'
         )}
         enter={classNames(
           'transition',

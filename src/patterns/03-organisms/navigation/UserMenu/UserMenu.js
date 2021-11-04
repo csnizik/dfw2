@@ -198,13 +198,13 @@ function UserMenu({ children, ...rest }) {
               </p>
             </div>
           ) : (
-            <form className={classNames('flex', 'flex-col', 'space-y-6')}>
+            <form className={classNames('flex', 'flex-col', 'space-y-4', 'w-full')}>
               <input
                 type="text"
                 id="username"
                 className={classNames(
                   'h-8',
-                  'rounded-xl',
+                  'rounded-full',
                   'px-6',
                   'py-5',
                   'placeholder-gray-300'
@@ -216,7 +216,7 @@ function UserMenu({ children, ...rest }) {
                 id="username"
                 className={classNames(
                   'h-8',
-                  'rounded-xl',
+                  'rounded-full',
                   'px-6',
                   'py-5',
                   'placeholder-gray-300'
@@ -225,10 +225,13 @@ function UserMenu({ children, ...rest }) {
               />
             </form>
           )}
+          <div className={classNames('flex','w-full','justify-start')}>
+          <p className={classNames('text-sm','font-normal','underline','text-black')}>Lost your password?</p>
+          </div>
           <button
             className={classNames(
               'flex',
-              loggedIn ? 'justify-between' : 'justify-center',
+              'justify-between',
               'items-center',
               'bg-blue-dark',
               'w-full',
@@ -242,7 +245,7 @@ function UserMenu({ children, ...rest }) {
               onClick={() => setLoggedIn(!loggedIn)}>
               {loggedIn ? 'Logout' : 'Login'}
             </p>
-            {loggedIn && <Icon size="m" type="IconExpand" color="teal" />}
+            <Icon size="m" type="IconExpand" color="teal" />
           </button>
         </div>
       </Transition>

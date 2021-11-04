@@ -19,7 +19,7 @@ const CardHeading = ({
           'flex',
           '-mt-3',
           '-mx-3',
-          'rounded-t-lg',
+          'rounded-t-20px',
           'min-w-full',
           'justify-between'
         )}>
@@ -47,8 +47,8 @@ const CardHeading = ({
                 className={classNames(
                   `bg-teal`,
                   `text-white`,
-                  `rounded-tr-lg`,
-                  `rounded-bl-lg`,
+                  `rounded-tr-20px`,
+                  `rounded-bl-20px`,
                   `focus:outline-none`,
                   `hover:bg-teal-light`,
                   `w-12`,
@@ -67,12 +67,12 @@ const CardHeading = ({
           <EditMenu className="relative inline-flex">
             <li>
               <Link
-                className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3"
+                className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-1 justify-center"
                 to="#0">
-                Download PDF
+                Download as PDF
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3"
                 to="#0">
@@ -85,7 +85,7 @@ const CardHeading = ({
                 to="/">
                 Return to Dashboard
               </Link>
-            </li>
+            </li> */}
           </EditMenu>
         )}
       </div>

@@ -11,7 +11,7 @@ const InfoCard = ({ card }) => {
         'flex',
         'flex-col',
         'space-y-4',
-        'rounded-lg',
+        'rounded-20px',
         'bg-white',
         'shadow',
         'p-3',
