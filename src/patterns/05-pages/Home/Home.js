@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../../03-organisms/navigation/Sidebar/Sidebar';
-import Header from '../../03-organisms/components/Header/Header'
+import Header from '../../03-organisms/components/Header/Header';
 import AtAGlance from '../../04-templates/AtAGlance';
 import TopMarkets from '../../04-templates/TopMarkets';
 import WaterAdventures from '../../04-templates/WaterAdventures';
@@ -13,7 +13,7 @@ const Home = ({ pathName }) => {
   // const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className={classNames('flex', 'h-screen', 'overflow-hidden')}>
+    <div className={classNames('flex', 'min-h-screen', 'overflow-hidden')}>
       <Sidebar
         // sidebarOpen={sidebarOpen}
         // setSidebarOpen={setSidebarOpen}
@@ -35,7 +35,13 @@ const Home = ({ pathName }) => {
         )}>
         <Header pathName={pathName} />
         <main>
-          <div className={classNames('m-6', pathName === '/' ? 'grid' : '', pathName === '/' ? 'grid-cols-3' : '', pathName === '/' ? 'gap-6' : '')}>
+          <div
+            className={classNames(
+              'm-6',
+              pathName === '/' ? 'grid' : '',
+              pathName === '/' ? 'grid-cols-3' : '',
+              pathName === '/' ? 'gap-6' : ''
+            )}>
             {/* Cards */}
             {pathName === '/' && <AtAGlance pathName={pathName} />}
             {(pathName === '/' || pathName === '/markets') && (
