@@ -281,7 +281,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );

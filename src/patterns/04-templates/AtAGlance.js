@@ -132,7 +132,7 @@ const AtAGlance = () => {
                 'items-center'
               )}
               onClick={() => setCardExpanded(!cardExpanded)}>
-              Show {cardExpanded ? 'less' : 'more'} information&nbsp;
+              Show {cardExpanded ? 'Less' : 'More'} Information&nbsp;
               <div
                 className={classNames(
                   'transform',
@@ -140,7 +140,7 @@ const AtAGlance = () => {
                   'duration-200',
                   cardExpanded ? 'rotate-0' : 'rotate-180'
                 )}>
-                <Icon type="Triangle" size="s" color="black" />
+                <Icon type="Triangle" size="xs" color="black" classes={classNames('mx-1')}/>
               </div>
             </button>
           </div>
