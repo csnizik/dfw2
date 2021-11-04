@@ -11,12 +11,14 @@ const Metric = ({ value, trend, size, ...props }) => {
           'flex-row',
           'justify-center',
           'items-center',
-          'px-2',
+          'pr-1',
+          'lg:pr-0',
           'py-0.5',
-          'mx-2',
-          'text-xl',
+          'mr-2',
+          'lg:mr-0',
+          'text-small',
           'lg:text-5xl',
-          'font-bold',
+          'lg:font-bold',
           trend === 'up'
             ? 'text-green'
             : trend === 'down'
@@ -31,10 +33,10 @@ const Metric = ({ value, trend, size, ...props }) => {
             />
           )}
         </div>
-        <div className={classNames('block', 'lg:hidden', 'mr-2')}>
+        <div className={classNames('block', 'lg:hidden')}>
           {(trend === 'up' || trend === 'down') && (
             <Icon
-              size='Small'
+              size='xs'
               type={trend === 'up' ? 'ArrowUp' : 'ArrowDown'}
             />
           )}

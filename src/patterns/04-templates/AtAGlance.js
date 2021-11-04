@@ -59,14 +59,17 @@ const AtAGlance = () => {
               'lg:col-span-1',
               'flex',
               'lg:flex-col',
+              'justify-start',
               'lg:justify-between',
               '-space-x-2',
               'lg:space-0',
-              'items-center'
+              'items-center',
             )}>
             <Metric value="0.6%" trend="up" />
             <h3 className={classNames('hed3')}>ROAI</h3>
           </div>
+          <div className={classNames('lg:hidden', 'block')}>test</div>
+          {/* TODO: get rid of the divide-y border that's happening here */}
         </div>
 
         <div
