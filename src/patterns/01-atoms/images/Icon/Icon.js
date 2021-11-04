@@ -74,7 +74,7 @@ const iconSize = (size) => {
       return 'h-3 w-3';
     case 'Small':
     case 's':
-      return 'h-4 w-4';
+      return 'h-5 w-5';
     case 'Large':
     case 'l':
       return 'h-16 w-16';
@@ -96,17 +96,17 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           )}
         />
       );
-      case 'ArrowRight':
-        return (
-          <ArrowRight
-            className={classNames(
-              'fill-current',
-              iconSize(size),
-              color && iconColor(color),
-              classes
-            )}
-          />
-        );
+    case 'ArrowRight':
+      return (
+        <ArrowRight
+          className={classNames(
+            'fill-current',
+            iconSize(size),
+            color && iconColor(color),
+            classes
+          )}
+        />
+      );
     case 'ArrowUp':
       return (
         <ArrowUp
