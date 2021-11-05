@@ -121,7 +121,7 @@ const AtAGlance = () => {
           <div
             className={classNames(
               'bg-teal',
-              'rounded-b-lg',
+              'rounded-b-20px',
               'h-12',
               'flex',
               'justify-center',

@@ -35,13 +35,16 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
+  .rounded-b-20px {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
   .rounded-tr-20px {
     border-top-right-radius: 20px;
   }
   .rounded-bl-20px {
     border-bottom-left-radius: 20px;
   }
-
   .speech-bubble::after {
     position: absolute;
     content: '';
@@ -49,7 +52,7 @@
   .speech-bubble-tail::after{
     border-top: 1px solid rgba(229,229,229,1);
     border-right: 1px solid rgba(229,229,229,1);
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(247,251,249,1);
     left: 85%;
     top: -6px;
     width: 10px;
