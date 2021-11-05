@@ -11,14 +11,14 @@
     @apply font-extrabold;
   }
   .hed2 {
-      @apply text-2xl;
-      @apply font-serif;
-      @apply font-bold;
+    @apply text-2xl;
+    @apply font-serif;
+    @apply font-bold;
   }
   .hed3 {
-      @apply text-lg;
-      @apply font-serif;
-      @apply font-medium;
+    @apply text-lg;
+    @apply font-serif;
+    @apply font-medium;
   }
 }
 @tailwind components;
@@ -26,7 +26,7 @@
 
 @layer utilities {
   .shadow-card {
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   }
   .rounded-20px {
     border-radius: 20px;
@@ -49,14 +49,42 @@
     position: absolute;
     content: '';
   }
-  .speech-bubble-tail::after{
-    border-top: 1px solid rgba(229,229,229,1);
-    border-right: 1px solid rgba(229,229,229,1);
-    background-color: rgba(247,251,249,1);
+  .speech-bubble-tail::after {
+    border-top: 1px solid rgba(229, 229, 229, 1);
+    border-right: 1px solid rgba(229, 229, 229, 1);
+    background-color: rgba(247, 251, 249, 1);
     left: 85%;
     top: -6px;
     width: 10px;
     height: 10px;
     transform: rotate(315deg);
+  }
+
+  .menu-right {
+    position: absolute;
+    height: 80px;
+    top: -27px;
+    right: -16px;
+    z-index: -1;
+  }
+  @media (min-width: 640px) {
+    .menu-right {
+      position: absolute;
+      height: 77px;
+      top: -26px;
+      right: -8px;
+      z-index: 1px;
+    }
+  }
+  .menu-250 {
+    width: 250px;
+  }
+  @media (max-width: 639px) {
+    .menu-80 {
+      width: 80px;
+    }
+    .download-button {
+      visibility: hidden;
+    }
   }
 }
