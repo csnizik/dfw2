@@ -84,7 +84,27 @@ function Sidebar({ pathName }) {
           sidebarOpen ? 'menu-250' : 'menu-80'
         )}>
         <Logo size="responsive" className="sm:self-start" />
-        <ul className={classNames('text-right', 'space-y-2', 'self-center','sm:self-end','flex','flex-col')}>
+        { sidebarOpen &&
+          <button
+          className={classNames(
+            'absolute',
+            'top-2',
+            'right-3',
+            'text-white',
+            'text-2xl',
+            'font-extralight'
+          )} onClick={() => setSidebarOpen(false)}>
+          X
+        </button>}
+        <ul
+          className={classNames(
+            'text-right',
+            'space-y-2',
+            'self-center',
+            'sm:self-end',
+            'flex',
+            'flex-col'
+          )}>
           <li
             className={classNames(
               'list-none',
@@ -124,8 +144,7 @@ function Sidebar({ pathName }) {
                 className={classNames(
                   'listItemText',
                   pathName === '/' ? 'text-black' : 'text-teal',
-                  !sidebarOpen ? 'hidden sm:block' : '',
-       
+                  !sidebarOpen ? 'hidden sm:block' : ''
                 )}>
                 <NavLink exact to="/">
                   Dashboard
@@ -443,7 +462,7 @@ function Sidebar({ pathName }) {
               'flex',
               'justify-center',
               'items-center',
-              'ring-0',
+              'ring-0'
             )}>
             <div
               className={classNames('cursor-pointer')}

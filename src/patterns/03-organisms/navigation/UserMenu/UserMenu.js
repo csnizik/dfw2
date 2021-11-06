@@ -105,7 +105,7 @@ function UserMenu({ children, ...rest }) {
           'h-auto',
           'bg-teal',
           'rounded-l-3xl',
-          'shadow-lg',
+          'shadow-card',
           'overflow-hidden',
           'p-5',
           'flex'
@@ -161,8 +161,7 @@ function UserMenu({ children, ...rest }) {
             </div>
             <button
               className={classNames(
-                'text-sm',
-                'font-light',
+                'font-extralight',
                 'text-black',
                 'text-2xl'
               )}

@@ -47,9 +47,9 @@ function Header({ pathName }) {
           'sm:mr-0',
           'pr-4',
           'sm:pr-0',
-          'shadow-sm',
+          'shadow-card',
           'bg-white',
-          'sm:bg-white-dark',
+          'sm:bg-transparent',
           'sm:shadow-none'
         )}>
         <h1 className={classNames('hed1', 'text-black', 'hidden', 'sm:block')}>
