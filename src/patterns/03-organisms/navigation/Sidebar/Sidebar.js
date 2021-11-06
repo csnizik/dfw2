@@ -39,7 +39,7 @@ function Sidebar({ pathName }) {
   });
 
   return (
-    <>
+    <div className={classNames('sidebar')}>
       <div
         id="sidebarBackdrop"
         className={classNames(
@@ -50,7 +50,7 @@ function Sidebar({ pathName }) {
           'bg-opacity-80',
           'sm:hidden',
           'w-screen',
-          'h-screen',
+          'h-full',
           'z-20',
           'sm:z-0',
           'transition-opacity',
@@ -65,7 +65,7 @@ function Sidebar({ pathName }) {
         className={classNames(
           'fixed',
           'inline',
-          'h-screen',
+          'h-full',
           'sm:relative',
           'inset-0',
           'bg-blue-dark',
@@ -84,18 +84,20 @@ function Sidebar({ pathName }) {
           sidebarOpen ? 'menu-250' : 'menu-80'
         )}>
         <Logo size="responsive" className="sm:self-start" />
-        { sidebarOpen &&
+        {sidebarOpen && (
           <button
-          className={classNames(
-            'absolute',
-            'top-2',
-            'right-3',
-            'text-white',
-            'text-2xl',
-            'font-extralight'
-          )} onClick={() => setSidebarOpen(false)}>
-          X
-        </button>}
+            className={classNames(
+              'absolute',
+              'top-2',
+              'right-3',
+              'text-white',
+              'text-2xl',
+              'font-extralight'
+            )}
+            onClick={() => setSidebarOpen(false)}>
+            X
+          </button>
+        )}
         <ul
           className={classNames(
             'text-right',
@@ -103,7 +105,9 @@ function Sidebar({ pathName }) {
             'self-center',
             'sm:self-end',
             'flex',
-            'flex-col'
+            'flex-col',
+            'mt-8',
+            'sm:mt-0'
           )}>
           <li
             className={classNames(
@@ -397,18 +401,11 @@ function Sidebar({ pathName }) {
             'pt-8',
             'mx-2',
             'items-center',
-            'justify-center'
+            'justify-center',
+            sidebarOpen ? 'block' : 'download-button'
           )}>
-          <p className={classNames('text-white', 'hidden', 'sm:block')}>
-            PDF Report
-          </p>
-          <p
-            className={classNames(
-              'text-white',
-              'font-light',
-              'hidden',
-              'sm:block'
-            )}>
+          <p className={classNames('text-white', 'sm:block')}>PDF Report</p>
+          <p className={classNames('text-white', 'font-light', 'sm:block')}>
             Download the monthly report
           </p>
           <button>
@@ -426,8 +423,7 @@ function Sidebar({ pathName }) {
                 'px-5',
                 'mt-3',
                 'space-between',
-                'space-x-3',
-                sidebarOpen ? 'block' : 'download-button'
+                'space-x-3'
               )}>
               <p className={classNames('block')}>Download</p>
               <Icon size="m" type="IconDownload" />
@@ -472,7 +468,7 @@ function Sidebar({ pathName }) {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

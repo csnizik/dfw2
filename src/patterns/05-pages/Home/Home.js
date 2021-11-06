@@ -37,6 +37,7 @@ const Home = ({ pathName }) => {
         <main>
           <div
             className={classNames(
+              // 'hidden',
               'm-6',
               pathName === '/' ? 'grid' : '',
               pathName === '/' ? 'grid-cols-3' : '',
