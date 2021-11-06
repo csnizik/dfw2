@@ -4,7 +4,6 @@ import Icon from '../../../01-atoms/images/Icon/Icon';
 
 const Metric = ({ value, trend, size, ...props }) => {
   return (
-    <div className={classNames('flex', 'flex-col')}>
       <div
         className={classNames(
           'flex',
@@ -44,7 +43,6 @@ const Metric = ({ value, trend, size, ...props }) => {
         <div className={classNames(`font-serif`)}>{value}</div>
       </div>
 
-    </div>
   );
 };
 

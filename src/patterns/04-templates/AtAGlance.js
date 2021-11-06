@@ -23,53 +23,108 @@ const AtAGlance = () => {
             'divide-gray-300',
             'pb-4'
           )}>
-          <div
-            className={classNames(
-              'col-span-3',
-              'lg:col-span-1',
-              'flex',
-              'lg:flex-col',
-              'lg:justify-between',
-              '-space-x-2',
-              'lg:space-0',
-              'items-center'
-            )}>
-            <Metric value="12.7%" trend="up" />
-            <h3 className={classNames('hed3')}>Visa Spend Per Visitor</h3>
+          <div className={classNames('col-span-3', 'lg:col-span-1')}>
+            <div
+              className={classNames(
+                'flex',
+                'lg:flex-col',
+                'justify-start',
+                'lg:justify-between',
+                '-space-x-2',
+                'lg:space-0',
+                'items-center'
+              )}>
+              <Metric value="12.7%" trend="up" />
+              <div className={classNames('hed4', 'font-bold', 'sm:hed3')}>
+                Visa Spend Per Visitor
+              </div>
+            </div>
+            <div
+              className={classNames(
+                'lg:hidden',
+                'transform',
+                'transition-all',
+                'origin-top',
+                'duration-100',
+                'ease-out',
+                cardExpanded ? 'h-16' : 'h-0',
+                'text-black',
+                'text-sm',
+                cardExpanded ? 'text-opacity-100' : 'text-opacity-0',
+                'ml-1'
+              )}>
+              <div className={classNames('font-bold')}>Goal: $240</div>
+              <div className={classNames('')}>This Season: $240</div>
+              <div className={classNames('')}>Last Season: $213</div>
+            </div>
           </div>
 
-          <div
-            className={classNames(
-              'col-span-3',
-              'lg:col-span-1',
-              'flex',
-              'lg:flex-col',
-              'lg:justify-between',
-              '-space-x-2',
-              'lg:space-0',
-              'items-center'
-            )}>
-            <Metric value="12.4%" trend="down" />
-            <h3 className={classNames('hed3')}>Visa Consumer Spend</h3>
+          <div className={classNames('col-span-3', 'lg:col-span-1')}>
+            <div
+              className={classNames(
+                'flex',
+                'lg:flex-col',
+                'justify-start',
+                'lg:justify-between',
+                '-space-x-2',
+                'lg:space-0',
+                'items-center'
+              )}>
+              <Metric value="12.4%" trend="down" />
+              <div className={classNames('hed4', 'font-bold', 'sm:hed3')}>
+                Visa Consumer Spend
+              </div>
+            </div>
+            <div
+              className={classNames(
+                'lg:hidden',
+                'transform',
+                'transition-all',
+                'origin-top',
+                'duration-100',
+                'ease-out',
+                cardExpanded ? 'h-16' : 'h-0',
+                'text-black',
+                'text-sm',
+                cardExpanded ? 'text-opacity-100' : 'text-opacity-0',
+              )}>
+              <div className={classNames('font-bold')}>Goal: $552,531,928</div>
+              <div className={classNames('')}>FY 2020: $502,301,753</div>
+              <div className={classNames('')}>FY 2019: $573,692,622</div>
+            </div>
           </div>
 
-          <div
-            className={classNames(
-              'col-span-3',
-              'lg:col-span-1',
-              'flex',
-              'lg:flex-col',
-              'justify-start',
-              'lg:justify-between',
-              '-space-x-2',
-              'lg:space-0',
-              'items-center',
-            )}>
-            <Metric value="0.6%" trend="up" />
-            <h3 className={classNames('hed3')}>ROAI</h3>
+          <div className={classNames('col-span-3', 'lg:col-span-1')}>
+            <div
+              className={classNames(
+                'flex',
+                'lg:flex-col',
+                'justify-start',
+                'lg:justify-between',
+                '-space-x-2',
+                'lg:space-0',
+                'items-center'
+              )}>
+              <Metric value="0.6%" trend="up" />
+              <div className={classNames('hed4', 'font-bold', 'sm:hed3')}>ROAI</div>
+            </div>
+            <div
+              className={classNames(
+                'lg:hidden',
+                'transform',
+                'transition-all',
+                'origin-top',
+                'duration-100',
+                'ease-out',
+                cardExpanded ? 'h-16' : 'h-0',
+                'text-black',
+                'text-sm',
+                cardExpanded ? 'text-opacity-100' : 'text-opacity-0',                'ml-1'
+              )}>
+              <div className={classNames('')}>2021: 4.8M</div>
+              <div className={classNames('')}>2020: 4.7M</div>
+            </div>
           </div>
-          <div className={classNames('lg:hidden', 'block')}>test</div>
-          {/* TODO: get rid of the divide-y border that's happening here */}
         </div>
 
         <div
@@ -82,11 +137,12 @@ const AtAGlance = () => {
             'justify-end',
             'transform',
             'transition-all',
-            'duration-500',
-            'ease-in-out',
+            'origin-top',
+            'duration-100',
+            'ease-out',
             '-mx-3',
             '-mb-3',
-            cardExpanded ? 'h-40' : 'h-12'
+            cardExpanded ? 'lg:h-36' : 'h-12'
           )}>
           <div
             className={classNames(
@@ -143,7 +199,12 @@ const AtAGlance = () => {
                   'duration-200',
                   cardExpanded ? 'rotate-0' : 'rotate-180'
                 )}>
-                <Icon type="Triangle" size="xs" color="black" classes={classNames('mx-1')}/>
+                <Icon
+                  type="Triangle"
+                  size="xs"
+                  color="black"
+                  classes={classNames('mx-1')}
+                />
               </div>
             </button>
           </div>
