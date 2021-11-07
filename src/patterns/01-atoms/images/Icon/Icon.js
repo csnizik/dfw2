@@ -9,7 +9,6 @@ import { ReactComponent as Network } from './network.svg';
 import { ReactComponent as Pencil } from './pencil.svg';
 import { ReactComponent as Pie } from './pie.svg';
 import { ReactComponent as Pin } from './pin.svg';
-import { ReactComponent as Play } from './play.svg';
 import { ReactComponent as Pointer } from './pointer.svg';
 import { ReactComponent as SlideLeft } from './slide-left.svg';
 import { ReactComponent as SlideRight } from './slide-right.svg';

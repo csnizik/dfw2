@@ -1,13 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import {
-  Player,
-  ControlBar,
-  PlayToggle,
-  LoadingSpinner,
-  BigPlayButton,
-  FullscreenToggle,
-  VolumeMenuButton,
+  Player
 } from 'video-react';
 
 import 'video-react/dist/video-react.css';

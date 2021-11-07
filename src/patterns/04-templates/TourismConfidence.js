@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
-import Chart from '../03-organisms/blocks/Chart/Chart';
+// import Chart from '../03-organisms/blocks/Chart/Chart';
 import Card from '../03-organisms/blocks/Card/Card';
 import CardHeading from '../02-molecules/CardHeading';
 import ConfidencePlaceholder from '../01-atoms/images/placeholder-confidence.png';
@@ -22,7 +22,7 @@ const TourismConfidence = ({ pathName }) => {
             pathName === '/' ? 'w-full' : 'w-2/3',
             'm-auto'
           )}>
-          <img src={ConfidencePlaceholder} />
+          <img src={ConfidencePlaceholder}  alt='placeholder'/>
           {/* <Chart
             chartType="PieChart"
             data={[
