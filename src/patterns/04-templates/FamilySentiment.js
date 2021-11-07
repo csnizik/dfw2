@@ -1,21 +1,14 @@
 import classNames from 'classnames';
 import React from 'react';
 import Icon from '../01-atoms/images/Icon/Icon';
-import {
-  Player,
-  ControlBar,
-  PlayToggle,
-  LoadingSpinner,
-  BigPlayButton,
-  FullscreenToggle,
-  VolumeMenuButton,
-} from 'video-react';
 import { NavLink } from 'react-router-dom';
-import PosterOne from '../01-atoms/images/videoposter01.png';
-import PosterTwo from '../01-atoms/images/videoposter02.png';
 import Card from '../03-organisms/blocks/Card/Card';
+import VideoThumbnail from '../03-organisms/components/VideoThumbnail/VideoThumbnail';
+import VideoPlayer from '../03-organisms/components/VideoPlayer/VideoPlayer'
+import PosterOne from '../01-atoms/images/movie01.png';
+import PosterTwo from '../01-atoms/images/movie02.png';
 
-import 'video-react/dist/video-react.css';
+const demoMovie = "https://media.w3.org/2010/05/sintel/trailer_hd.mp4";
 
 const FamilySentiment = ({ pathName }) => {
   return (
@@ -54,7 +47,7 @@ const FamilySentiment = ({ pathName }) => {
               'pr-4',
               'items-center',
               'space-x-4',
-              'shadow',
+              'shadow-card',
               pathName === '/sentiment' ? 'w-96' : ''
             )}>
             <div
@@ -63,22 +56,7 @@ const FamilySentiment = ({ pathName }) => {
                 'rounded-l-lg',
                 'overflow-y-hidden'
               )}>
-              <Player
-                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-                poster={PosterOne}
-                height="220"
-                muted>
-                <BigPlayButton position="center" />
-                <LoadingSpinner />
-                <ControlBar
-                  autoHide={false}
-                  disableDefaultControls
-                  className={classNames('flex', 'justify-between')}>
-                  <PlayToggle />
-                  <VolumeMenuButton vertical />
-                  <FullscreenToggle />
-                </ControlBar>
-              </Player>
+              <VideoThumbnail src={PosterOne} />
             </div>
             <h3
               className={classNames(
@@ -99,7 +77,7 @@ const FamilySentiment = ({ pathName }) => {
               'pr-4',
               'items-center',
               'space-x-4',
-              'shadow',
+              'shadow-card',
               pathName === '/sentiment' ? 'w-96' : ''
             )}>
             <div
@@ -108,22 +86,8 @@ const FamilySentiment = ({ pathName }) => {
                 'rounded-l-lg',
                 'overflow-y-hidden'
               )}>
-              <Player
-                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-                poster={PosterTwo}
-                height="220"
-                muted>
-                <BigPlayButton position="center" />
-                <LoadingSpinner />
-                <ControlBar
-                  autoHide={false}
-                  disableDefaultControls
-                  className={classNames('flex', 'justify-between')}>
-                  <PlayToggle />
-                  <VolumeMenuButton />
-                  <FullscreenToggle />
-                </ControlBar>
-              </Player>
+              
+              <VideoThumbnail src={PosterTwo} />
             </div>
             <h3
               className={classNames(
@@ -137,6 +101,7 @@ const FamilySentiment = ({ pathName }) => {
           </div>
           <div className={classNames('')} id="sentimentExpanded"></div>
         </div>
+
       </Card>
     </div>
   );

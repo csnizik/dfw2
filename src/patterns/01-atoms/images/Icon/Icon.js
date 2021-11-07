@@ -22,6 +22,7 @@ import { ReactComponent as IconEdit } from './icon-edit.svg';
 import { ReactComponent as IconExpand } from './icon-expand.svg';
 import { ReactComponent as IconFamilySentiment } from './icon-family-sentiment.svg';
 import { ReactComponent as IconMenuDots } from './icon-menu-dots.svg';
+import { ReactComponent as IconPlay } from './icon-play.svg';
 import { ReactComponent as IconTopMarkets } from './icon-top-markets.svg';
 import { ReactComponent as IconTourismConfidence } from './icon-tourism-confidence.svg';
 import { ReactComponent as IconValueGap } from './icon-value-gap.svg';
@@ -60,6 +61,8 @@ const iconColor = (color) => {
     case 'Gray':
     case 'gray':
       return 'text-gray-500';
+    case 'white':
+      return 'text-white';
     default:
       return '';
   }
@@ -215,11 +218,12 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
       );
     case 'Play':
       return (
-        <Play
+        <IconPlay
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
