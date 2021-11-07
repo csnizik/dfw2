@@ -54,7 +54,7 @@ function UserMenu({ children, ...rest }) {
           'truncate',
           'text-xs',
           'sm:text-base',
-          'h-11'
+          'h-10'
         )}>
         <div
           className={classNames(
