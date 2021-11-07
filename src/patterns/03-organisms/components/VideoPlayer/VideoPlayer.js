@@ -11,14 +11,11 @@ import {
 } from 'video-react';
 
 import 'video-react/dist/video-react.css';
+import './VideoPlayer.css';
 
 const VideoPlayer = (props) => {
-    
   return (
-    <Player>
-      <source src={props.url} fluid/>
-    </Player>
-    
+      <Player src={props.url} fluid preload="auto" autoPlay={true} className={classNames(props.className)}/>
   );
 };
 
