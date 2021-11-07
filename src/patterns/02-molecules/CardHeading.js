@@ -93,7 +93,7 @@ const CardHeading = ({
         className={classNames(
           'text-gray-500',
           'text-sm',
-          pathName === '/' ? 'visible' : 'invisible'
+          pathName === '/' ? 'block' : 'hidden'
         )}>
         {cardSubtitle}
       </p>

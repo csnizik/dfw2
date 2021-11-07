@@ -3,6 +3,7 @@ import Card from '../03-organisms/blocks/Card/Card';
 import Chart from '../03-organisms/blocks/Chart/Chart';
 import classNames from 'classnames';
 import CardHeading from '../02-molecules/CardHeading';
+import WaterPlaceholder from '../01-atoms/images/placeholder-water.png';
 
 const WaterAdventures = ({ pathName }) => {
   return (
@@ -21,7 +22,8 @@ const WaterAdventures = ({ pathName }) => {
             pathName === '/' ? 'w-full' : 'w-2/3',
             'm-auto'
           )}>
-          <Chart
+          <img src={WaterPlaceholder} />
+          {/* <Chart
             chartType="Bar"
             data={[
               ['Year', 'Total Water Adventures', { role: 'style' }],
@@ -46,7 +48,7 @@ const WaterAdventures = ({ pathName }) => {
               },
             }}
             rootProps={{ 'data-testid': '1' }}
-          />
+          /> */}
         </div>
         <div className={classNames()} id="waterExpanded"></div>
       </Card>

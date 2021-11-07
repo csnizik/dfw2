@@ -3,6 +3,7 @@ import React from 'react';
 import Chart from '../03-organisms/blocks/Chart/Chart';
 import Card from '../03-organisms/blocks/Card/Card';
 import CardHeading from '../02-molecules/CardHeading';
+import ValuePlaceholder from '../01-atoms/images/placeholder-value.png';
 
 const ValueGap = ({ pathName }) => {
   return (
@@ -16,7 +17,8 @@ const ValueGap = ({ pathName }) => {
           cardSubtitle="Measures the dark green gap"
         />
         <div id="valueChart" className={classNames('w-full', 'm-auto')}>
-          <Chart
+          <img src={ValuePlaceholder} />
+          {/* <Chart
             chartType="ComboChart"
             data={[
               [
@@ -83,7 +85,7 @@ const ValueGap = ({ pathName }) => {
               },
             }}
             rootProps={{ 'data-testid': '1' }}
-          />
+          /> */}
         </div>
         <div className={classNames('')} id="valueExpanded"></div>
       </Card>

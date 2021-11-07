@@ -7,6 +7,8 @@ import Table from '../03-organisms/blocks/Table/Table';
 import Card from '../03-organisms/blocks/Card/Card';
 import InfoCardContainer from '../03-organisms/blocks/InfoCard/InfoCardContainer';
 import CardHeading from '../02-molecules/CardHeading';
+import MarketsPlaceholder from '../01-atoms/images/placeholder-markets.png';
+import SliderPlaceholder from '../01-atoms/images/placeholder-slider.png';
 
 const TopMarkets = ({ pathName }) => {
   return (
@@ -20,9 +22,16 @@ const TopMarkets = ({ pathName }) => {
           cardSubtitle="Increased arrivals from key markets and increased visitor spending per market"
         />
         {pathName === '/markets' && (
-          <div className={classNames('w-64', 'mx-auto')}>
-            <InputSlider />
-          </div>
+          <>
+            <div className={classNames('hed3','-mt-3')}>2020 Prime (Oct-March)</div>
+            {/* <div className={classNames('w-64', 'self-center')}>
+              <InputSlider />
+          </div> */}
+            <img
+              className={classNames('h-7', 'mx-auto')}
+              src={SliderPlaceholder}
+            />
+          </>
         )}
         <div
           id="marketsChart"
@@ -30,8 +39,8 @@ const TopMarkets = ({ pathName }) => {
             pathName === '/' ? 'w-full' : 'container',
             'm-auto'
           )}>
-          <Chart
-            // width={pathName === '/' ? '440px' : '600px'}
+          <img src={MarketsPlaceholder} />
+          {/* <Chart
             chartType="GeoChart"
             data={[
               ['City', 'Total Spend', 'Arrivals'],
@@ -70,7 +79,7 @@ const TopMarkets = ({ pathName }) => {
             // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
             mapsApiKey="YOUR_KEY_HERE"
             rootProps={{ 'data-testid': '1' }}
-          />
+          /> */}
         </div>
       </Card>
       {pathName === '/markets' && (

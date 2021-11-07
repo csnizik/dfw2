@@ -3,6 +3,7 @@ import React from 'react';
 import Chart from '../03-organisms/blocks/Chart/Chart';
 import Card from '../03-organisms/blocks/Card/Card';
 import CardHeading from '../02-molecules/CardHeading';
+import ConfidencePlaceholder from '../01-atoms/images/placeholder-confidence.png';
 
 const TourismConfidence = ({ pathName }) => {
   return (
@@ -21,7 +22,8 @@ const TourismConfidence = ({ pathName }) => {
             pathName === '/' ? 'w-full' : 'w-2/3',
             'm-auto'
           )}>
-          <Chart
+          <img src={ConfidencePlaceholder} />
+          {/* <Chart
             chartType="PieChart"
             data={[
               ['Tourism Sentiment', 'Percent'],
@@ -53,7 +55,7 @@ const TourismConfidence = ({ pathName }) => {
               colors: ['#48AAED', '#77DBDB', '#FCB3B1'],
             }}
             rootProps={{ 'data-testid': '1' }}
-          />
+          /> */}
         </div>
         <div className={classNames('')} id="confidenceExpanded"></div>
       </Card>

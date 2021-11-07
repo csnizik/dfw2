@@ -73,7 +73,7 @@ const FamilySentiment = ({ pathName, props }) => {
                   'text-overflow: ellipsis',
                   'leading-tight',
                   'text-center',
-                  'my-2','mx-4',
+                  'my-2',
                   'block',
                   'sm:hidden'
                 )}>
@@ -126,7 +126,7 @@ const FamilySentiment = ({ pathName, props }) => {
                   'text-overflow: ellipsis',
                   'leading-tight',
                   'text-center',
-                  'my-2','mx-4',
+                  'my-2',
                   'block',
                   'sm:hidden'
                 )}>
