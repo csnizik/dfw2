@@ -23,13 +23,16 @@ const TopMarkets = ({ pathName }) => {
         />
         {pathName === '/markets' && (
           <>
-            <div className={classNames('hed3','-mt-3')}>2020 Prime (Oct-March)</div>
+            <div className={classNames('hed3', '-mt-3')}>
+              2020 Prime (Oct-March)
+            </div>
             {/* <div className={classNames('w-64', 'self-center')}>
               <InputSlider />
           </div> */}
             <img
               className={classNames('h-7', 'mx-auto')}
-              src={SliderPlaceholder} alt='placeholder'
+              src={SliderPlaceholder}
+              alt="placeholder"
             />
           </>
         )}
@@ -39,7 +42,7 @@ const TopMarkets = ({ pathName }) => {
             pathName === '/' ? 'w-full' : 'container',
             'm-auto'
           )}>
-          <img src={MarketsPlaceholder} />
+          <img src={MarketsPlaceholder} alt="placeholder" />
           {/* <Chart
             chartType="GeoChart"
             data={[
