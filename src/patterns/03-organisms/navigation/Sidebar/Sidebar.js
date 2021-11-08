@@ -146,7 +146,7 @@ function Sidebar({ pathName }) {
               </div>
               <div
                 className={classNames(
-                  'listItemText',
+                  'font-serif',
                   pathName === '/' ? 'text-black' : 'text-teal',
                   !sidebarOpen ? 'hidden sm:block' : ''
                 )}>
@@ -193,7 +193,7 @@ function Sidebar({ pathName }) {
               </div>
               <div
                 className={classNames(
-                  'listItemText',
+                  'font-serif',
                   pathName === '/markets' ? 'text-black' : 'text-teal',
                   !sidebarOpen ? 'hidden sm:block' : ''
                 )}>
@@ -241,7 +241,7 @@ function Sidebar({ pathName }) {
               <div
                 className={classNames(
                   // 'pl-3',
-                  'listItemText',
+                  'font-serif',
                   pathName === '/water' ? 'text-black' : 'text-teal',
                   !sidebarOpen ? 'hidden sm:block' : ''
                 )}>
@@ -289,7 +289,7 @@ function Sidebar({ pathName }) {
               <div
                 className={classNames(
                   // 'pl-3',
-                  'listItemText',
+                  'font-serif',
                   pathName === '/value' ? 'text-black' : 'text-teal',
                   !sidebarOpen ? 'hidden sm:block' : ''
                 )}>
@@ -336,7 +336,7 @@ function Sidebar({ pathName }) {
               </div>
               <div
                 className={classNames(
-                  'listItemText',
+                  'font-serif',
                   pathName === '/confidence' ? 'text-black' : 'text-teal',
                   !sidebarOpen ? 'hidden sm:block' : ''
                 )}>
@@ -383,7 +383,7 @@ function Sidebar({ pathName }) {
               </div>
               <div
                 className={classNames(
-                  'listItemText',
+                  'font-serif',
                   pathName === '/sentiment' ? 'text-black' : 'text-teal',
                   !sidebarOpen ? 'hidden sm:block' : ''
                 )}>
@@ -404,8 +404,8 @@ function Sidebar({ pathName }) {
             'justify-center',
             sidebarOpen ? 'block' : 'download-button'
           )}>
-          <p className={classNames('text-white', 'sm:block')}>PDF Report</p>
-          <p className={classNames('text-white', 'font-light', 'sm:block')}>
+          <p className={classNames('text-white', 'sm:block','font-serif')}>PDF Report</p>
+          <p className={classNames('text-white', 'font-light', 'sm:block','font-serif')}>
             Download the monthly report
           </p>
           <button>
@@ -425,7 +425,7 @@ function Sidebar({ pathName }) {
                 'space-between',
                 'space-x-3'
               )}>
-              <p className={classNames('block')}>Download</p>
+              <p className={classNames('block','font-serif')}>Download</p>
               <Icon size="m" type="IconDownload" />
             </div>
           </button>

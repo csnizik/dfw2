@@ -54,7 +54,7 @@ function UserMenu({ children, ...rest }) {
           'truncate',
           'text-xs',
           'sm:text-base',
-          'h-10'
+          'h-10',
         )}>
         <div
           className={classNames(
@@ -80,14 +80,14 @@ function UserMenu({ children, ...rest }) {
               loggedIn ? 'flex' : 'hidden',
               'items-center',
               'justify-center',
-              'text-xs'
+              'text-xs','font-serif'
             )}>
             KC
           </div>
-          <div>{loggedIn ? 'Kelsey Cahill' : 'Login'}</div>
+          <div className={classNames('font-serif')}>{loggedIn ? 'Kelsey Cahill' : 'Login'}</div>
         </div>
         <button
-          className={classNames('')}
+          className={classNames('font-serif')}
           onClick={() => setLoggedIn(false)}></button>
         {loggedIn && <Icon size="m" type="IconExpand" />}
       </button>
@@ -154,7 +154,8 @@ function UserMenu({ children, ...rest }) {
                   'text-sm',
                   'italic',
                   'font-light',
-                  'font-blue-dark'
+                  'font-blue-dark',
+                  'font-serif'
                 )}>
                 Edit profile
               </p>
@@ -163,7 +164,7 @@ function UserMenu({ children, ...rest }) {
               className={classNames(
                 'font-extralight',
                 'text-black',
-                'text-2xl'
+                'text-2xl',
               )}
               onClick={() => setDropdownOpen(false)}>
               X
@@ -192,7 +193,7 @@ function UserMenu({ children, ...rest }) {
                 <Icon size="l" color="NavySky" type="Dashboard" />
               </div>
               <h2 className={classNames('hed2')}>Kelsey Cahill</h2>
-              <p className={classNames('font-light', 'text-blue-dark')}>
+              <p className={classNames('font-light', 'text-blue-dark','font-serif')}>
                 Position title
               </p>
             </div>
@@ -206,7 +207,7 @@ function UserMenu({ children, ...rest }) {
                   'rounded-full',
                   'px-6',
                   'py-5',
-                  'placeholder-gray-300'
+                  'placeholder-gray-300','font-serif'
                 )}
                 placeholder="Username"
               />
@@ -218,14 +219,14 @@ function UserMenu({ children, ...rest }) {
                   'rounded-full',
                   'px-6',
                   'py-5',
-                  'placeholder-gray-300'
+                  'placeholder-gray-300','font-serif'
                 )}
                 placeholder="Password"
               />
             </form>
           )}
           <div className={classNames('flex','w-full','justify-start')}>
-          <p className={classNames('text-sm','font-normal','underline','text-black')}>Lost your password?</p>
+          <p className={classNames('text-sm','font-normal','underline','text-black','font-serif')}>Lost your password?</p>
           </div>
           <button
             className={classNames(
@@ -240,7 +241,7 @@ function UserMenu({ children, ...rest }) {
             )}
             onClick={() => setDropdownOpen(false)}>
             <p
-              className={classNames('text-teal')}
+              className={classNames('text-teal','font-serif')}
               onClick={() => setLoggedIn(!loggedIn)}>
               {loggedIn ? 'Logout' : 'Login'}
             </p>

@@ -43,7 +43,7 @@ const InfoCard = ({ card }) => {
           </div>
         </button>
       </div>
-      {cardExpanded && <div className={classNames('')}>{card.data}</div>}
+      {cardExpanded && <div className={classNames('font-serif')}>{card.data}</div>}
     </div>
   );
 };

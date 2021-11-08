@@ -67,7 +67,7 @@ const CardHeading = ({
           <EditMenu className="relative inline-flex">
             <li>
               <Link
-                className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-1 justify-center"
+                className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-1 justify-center font-serif"
                 to="#0">
                 Download as PDF
               </Link>
@@ -93,6 +93,7 @@ const CardHeading = ({
         className={classNames(
           'text-gray-500',
           'text-sm',
+          'font-serif',
           pathName === '/' ? 'block' : 'hidden'
         )}>
         {cardSubtitle}
