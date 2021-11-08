@@ -45,6 +45,7 @@ const CardHeading = ({
             <div className={classNames('self-end', 'flex', 'items-center')}>
               <button
                 className={classNames(
+                  'expand-button',
                   `bg-teal`,
                   `text-white`,
                   `rounded-tr-20px`,
@@ -72,32 +73,18 @@ const CardHeading = ({
                 Download as PDF
               </Link>
             </li>
-            {/* <li>
-              <Link
-                className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3"
-                to="#0">
-                Option 2
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3"
-                to="/">
-                Return to Dashboard
-              </Link>
-            </li> */}
           </EditMenu>
         )}
       </div>
-      <p
+      {cardSubtitle && <p
         className={classNames(
           'text-gray-500',
           'text-sm',
-          'font-serif',
+          'font-serif','mb-4',
           pathName === '/' ? 'block' : 'hidden'
         )}>
         {cardSubtitle}
-      </p>
+      </p>}
     </>
   );
 };
