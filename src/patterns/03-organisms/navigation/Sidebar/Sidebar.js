@@ -88,15 +88,14 @@ function Sidebar({ pathName }) {
           <button
             className={classNames(
               'absolute',
-              'top-2',
-              'right-3',
+              'top-3',
+              'right-4',
               'text-white',
               'text-2xl',
-              'font-extralight'
+              'font-extralight',
+              'icon-x'
             )}
-            onClick={() => setSidebarOpen(false)}>
-            X
-          </button>
+            onClick={() => setSidebarOpen(false)} />
         )}
         <ul
           className={classNames(

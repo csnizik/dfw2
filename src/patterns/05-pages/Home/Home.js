@@ -27,7 +27,6 @@ const Home = ({ pathName }) => {
           className={classNames(
             'relative',
             'ml-20',
-            'pt-4',
             'sm:ml-0',
             'flex-grow',
             'flex',
@@ -45,7 +44,7 @@ const Home = ({ pathName }) => {
                 'm-6',
                 pathName === '/' ? 'grid' : '',
                 pathName === '/' ? 'grid-cols-3' : '',
-                pathName === '/' ? 'gap-6' : ''
+                pathName === '/' ? 'gap-8' : ''
               )}>
               {/* Cards */}
               {pathName === '/' && <AtAGlance pathName={pathName} />}

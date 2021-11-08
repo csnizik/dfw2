@@ -131,7 +131,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
             '-rotate-90',
             'transform',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -141,7 +142,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -152,7 +154,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -162,7 +165,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -172,7 +176,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -192,7 +197,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -202,7 +208,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -233,7 +240,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -253,7 +261,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -263,7 +272,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -296,7 +306,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -306,7 +317,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -316,7 +328,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -326,7 +339,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -336,7 +350,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -346,7 +361,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -356,7 +372,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -366,7 +383,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -376,7 +394,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -386,7 +405,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -396,7 +416,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );
@@ -412,7 +433,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
           className={classNames(
             'fill-current',
             iconSize(size),
-            iconColor(color)
+            iconColor(color),
+            classes
           )}
         />
       );

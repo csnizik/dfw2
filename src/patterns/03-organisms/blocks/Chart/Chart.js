@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 import GoogleChart from 'react-google-charts';
 
@@ -13,7 +14,7 @@ const Chart = ({
   ...props
 }) => {
   return (
-    <div>
+    <div className={classNames('')}>
       <GoogleChart
         width={width}
         height={height}

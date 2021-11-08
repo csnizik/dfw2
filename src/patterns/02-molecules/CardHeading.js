@@ -80,7 +80,7 @@ const CardHeading = ({
         className={classNames(
           'text-gray-500',
           'text-sm',
-          'font-serif','mb-4',
+          'font-serif','mb-4','pl-10',
           pathName === '/' ? 'block' : 'hidden'
         )}>
         {cardSubtitle}

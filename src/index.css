@@ -52,6 +52,7 @@
   .speech-bubble::after {
     position: absolute;
     content: '';
+    right: 6px;
   }
   .speech-bubble-tail::after {
     border-top: 1px solid rgba(229, 229, 229, 1);
@@ -129,5 +130,8 @@
   .icon-x {
     width: 18px;
     height: 18px;
+  }
+  .icon-x::before {
+    content: url(patterns/01-atoms/images/Icon/icon-x.svg);
   }
 }

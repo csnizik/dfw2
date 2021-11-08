@@ -26,20 +26,20 @@ function Header({ pathName }) {
       className={classNames(
         'static',
         'top-0',
-        'p-4',
+        'pr-4','pl-7',
         'sm:px-6',
         'bg-white-dark',
-        'sm:bg-white-dark',
         'z-10'
       )}>
       <div
         className={classNames(
           'flex',
-          'items-center',
+          'items-end',
           'justify-end',
           'sm:justify-between',
           'h-12',
           'mb-1',
+          'mt-2',
           'sm:-mb-px',
           '-ml-20',
           'sm:ml-0',
@@ -60,7 +60,7 @@ function Header({ pathName }) {
       <div
         id="mobileTitle"
         className={classNames('block', 'bg-white-dark', 'sm:hidden')}>
-        <h1 className={classNames('hed1', 'text-black')}>
+        <h1 className={classNames('hed1', 'text-black','mt-5')}>
           {pageName(pathName)}
         </h1>
       </div>

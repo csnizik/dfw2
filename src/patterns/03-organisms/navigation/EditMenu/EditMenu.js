@@ -44,7 +44,6 @@ function EditMenu({ children, ...rest }) {
           'rounded-full',
           'mr-5',
           'mt-3',
-          // dropdownOpen && 'bg-gray-100 text-gray-500'
         )}
         aria-haspopup="true"
         onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -59,7 +58,7 @@ function EditMenu({ children, ...rest }) {
           'origin-top-right',
           'z-10',
           'absolute top-full',
-          'right-2',
+          'right-4',
           'w-36',
           'bg-white',
           'border',
@@ -85,7 +84,8 @@ function EditMenu({ children, ...rest }) {
         <ul
           ref={dropdown}
           onFocus={() => setDropdownOpen(true)}
-          onBlur={() => setDropdownOpen(false)}>
+          onBlur={() => setDropdownOpen(false)}
+          onClick={() => setDropdownOpen(false)}>
           {children}
         </ul>
       </Transition>

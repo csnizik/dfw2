@@ -210,7 +210,8 @@ const AtAGlance = () => {
               'h-12',
               'flex',
               'justify-center',
-              'py-2'
+              'py-2',
+              'expand-drawer-button'
             )}>
             <button
               className={classNames(
