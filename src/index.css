@@ -128,10 +128,13 @@
     overflow: hidden;
   }
   .icon-x {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
-  .icon-x::before {
+  .icon-xw::before {
     content: url(patterns/01-atoms/images/Icon/icon-x.svg);
+  }
+  .icon-xb::before {
+    content: url(patterns/01-atoms/images/Icon/icon-x-bk.svg);
   }
 }

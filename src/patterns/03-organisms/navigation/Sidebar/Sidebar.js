@@ -93,7 +93,8 @@ function Sidebar({ pathName }) {
               'text-white',
               'text-2xl',
               'font-extralight',
-              'icon-x'
+              'icon-x',
+              'icon-xw'
             )}
             onClick={() => setSidebarOpen(false)} />
         )}
