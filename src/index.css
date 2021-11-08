@@ -92,4 +92,7 @@
       visibility: hidden;
     }
   }
+  .video-grid div:nth-child(n+5) {
+    display: none;
+  }
 }
