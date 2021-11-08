@@ -2,7 +2,7 @@ import classNames from 'classnames';
 // import React, { useState } from 'react';
 import React from 'react';
 // import Chart from '../03-organisms/blocks/Chart/Chart';
-// import InputSlider from '../03-organisms/components/InputSlider/InputSlider';
+import InputSlider from '../03-organisms/components/InputSlider/InputSlider';
 import Table from '../03-organisms/blocks/Table/Table';
 import Card from '../03-organisms/blocks/Card/Card';
 import InfoCardContainer from '../03-organisms/blocks/InfoCard/InfoCardContainer';

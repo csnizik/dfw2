@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../03-organisms/blocks/Card/Card';
-// import Chart from '../03-organisms/blocks/Chart/Chart';
+import Chart from '../03-organisms/blocks/Chart/Chart';
 import classNames from 'classnames';
 import CardHeading from '../02-molecules/CardHeading';
 import WaterPlaceholder from '../01-atoms/images/placeholder-water.png';
