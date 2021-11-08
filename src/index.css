@@ -92,7 +92,7 @@
       visibility: hidden;
     }
   }
-  .video-grid div:nth-child(n+5) {
+  .video-grid div:nth-child(n+3) {
     display: none;
   }
 }
