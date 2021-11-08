@@ -48,7 +48,7 @@ const FamilySentiment = ({ pathName, props }) => {
           <div
             className={classNames(
               pathName === '/sentiment'
-                ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'
+                ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 2xl:grid-cols-3 gap-4'
                 : 'flex flex-col space-between space-y-5 video-grid'
             )}>
             <div
@@ -87,7 +87,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     'text-center',
                     'my-2',
                     'block',
-                    'sm:hidden'
+                    'sm:hidden',
                   )}>
                   Mom Panel Product Test Image is Great
                 </div>
@@ -139,7 +139,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     'text-center',
                     'my-2',
                     'block',
-                    'sm:hidden'
+                    'sm:hidden',
                   )}>
                   Atlanta Mom Feedback
                 </div>
@@ -192,7 +192,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     'text-center',
                     'my-2',
                     'block',
-                    'sm:hidden'
+                    'sm:hidden',
                   )}>
                   Lorem Ipsum um Posuere
                 </div>
@@ -245,7 +245,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     'text-center',
                     'my-2',
                     'block',
-                    'sm:hidden'
+                    'sm:hidden',
                   )}>
                   Maecenas Eget Lectus vel Metus
                 </div>
@@ -297,7 +297,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     'text-center',
                     'my-2',
                     'block',
-                    'sm:hidden'
+                    'sm:hidden',
                   )}>
                   Curabitur Ullamcorper Mattis
                 </div>
@@ -350,7 +350,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     'text-center',
                     'my-2',
                     'block',
-                    'sm:hidden'
+                    'sm:hidden',
                   )}>
                   Aliquam In Fermentum Nunc Vivamus
                 </div>
@@ -403,7 +403,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     'text-center',
                     'my-2',
                     'block',
-                    'sm:hidden'
+                    'sm:hidden',
                   )}>
                   Et Risus et Neque
                 </div>
@@ -456,7 +456,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     'text-center',
                     'my-2',
                     'block',
-                    'sm:hidden'
+                    'sm:hidden',
                   )}>
                   In Orci Felis, Consectetur Ut
                 </div>
