@@ -7,7 +7,7 @@ import Table from '../03-organisms/blocks/Table/Table';
 import Card from '../03-organisms/blocks/Card/Card';
 import InfoCardContainer from '../03-organisms/blocks/InfoCard/InfoCardContainer';
 import CardHeading from '../02-molecules/CardHeading';
-import MarketsPlaceholder from '../01-atoms/images/placeholder-markets.png';
+// import MarketsPlaceholder from '../01-atoms/images/placeholder-markets.png';
 import SliderPlaceholder from '../01-atoms/images/placeholder-slider.png';
 
 const TopMarkets = ({ pathName }) => {
