@@ -48,7 +48,7 @@ const FamilySentiment = ({ pathName, props }) => {
           <div
             className={classNames(
               pathName === '/sentiment'
-                ? 'grid grid-cols-1 grid-cols-2 md:grid-cols-2 2xl:grid-cols-3 gap-4'
+                ? 'grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4'
                 : 'flex flex-col space-between space-y-5 video-grid'
             )}>
             <div
