@@ -22,8 +22,8 @@ const WaterAdventures = ({ pathName }) => {
             pathName === '/' ? 'w-full' : 'w-2/3',
             'm-auto'
           )}>
-          <img src={WaterPlaceholder}  alt='placeholder'/>
-          {/* <Chart
+          {/* <img src={WaterPlaceholder}  alt='placeholder'/> */}
+          <Chart
             chartType="Bar"
             data={[
               ['Year', 'Total Water Adventures', { role: 'style' }],
@@ -48,7 +48,7 @@ const WaterAdventures = ({ pathName }) => {
               },
             }}
             rootProps={{ 'data-testid': '1' }}
-          /> */}
+          />
         </div>
         <div className={classNames()} id="waterExpanded"></div>
       </Card>

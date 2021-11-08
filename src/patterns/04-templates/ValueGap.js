@@ -17,8 +17,8 @@ const ValueGap = ({ pathName }) => {
           cardSubtitle="Measures the dark green gap"
         />
         <div id="valueChart" className={classNames('w-full', 'm-auto')}>
-          <img src={ValuePlaceholder}  alt='placeholder'/>
-          {/* <Chart
+          {/* <img src={ValuePlaceholder}  alt='placeholder'/> */}
+          <Chart
             chartType="ComboChart"
             data={[
               [
@@ -85,7 +85,7 @@ const ValueGap = ({ pathName }) => {
               },
             }}
             rootProps={{ 'data-testid': '1' }}
-          /> */}
+          />
         </div>
         <div className={classNames('')} id="valueExpanded"></div>
       </Card>

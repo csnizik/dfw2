@@ -22,8 +22,8 @@ const TourismConfidence = ({ pathName }) => {
             pathName === '/' ? 'w-full' : 'w-2/3',
             'm-auto'
           )}>
-          <img src={ConfidencePlaceholder}  alt='placeholder'/>
-          {/* <Chart
+          {/* <img src={ConfidencePlaceholder}  alt='placeholder'/> */}
+          <Chart
             chartType="PieChart"
             data={[
               ['Tourism Sentiment', 'Percent'],
@@ -55,7 +55,7 @@ const TourismConfidence = ({ pathName }) => {
               colors: ['#48AAED', '#77DBDB', '#FCB3B1'],
             }}
             rootProps={{ 'data-testid': '1' }}
-          /> */}
+          />
         </div>
         <div className={classNames('')} id="confidenceExpanded"></div>
       </Card>

@@ -42,8 +42,8 @@ const TopMarkets = ({ pathName }) => {
             pathName === '/' ? 'w-full' : 'container',
             'm-auto'
           )}>
-          <img src={MarketsPlaceholder} alt="placeholder" />
-          {/* <Chart
+          {/* <img src={MarketsPlaceholder} alt="placeholder" /> */}
+          <Chart
             chartType="GeoChart"
             data={[
               ['City', 'Total Spend', 'Arrivals'],
@@ -82,7 +82,7 @@ const TopMarkets = ({ pathName }) => {
             // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
             mapsApiKey="YOUR_KEY_HERE"
             rootProps={{ 'data-testid': '1' }}
-          /> */}
+          />
         </div>
       </Card>
       {pathName === '/markets' && (
