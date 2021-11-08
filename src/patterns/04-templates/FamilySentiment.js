@@ -1,9 +1,8 @@
 import classNames from 'classnames';
 import React from 'react';
 import Icon from '../01-atoms/images/Icon/Icon';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Card from '../03-organisms/blocks/Card/Card';
-import VideoThumbnail from '../03-organisms/components/VideoThumbnail/VideoThumbnail';
 import VideoPlayer from '../03-organisms/components/VideoPlayer/VideoPlayer';
 import VideoBlock from '../03-organisms/blocks/VideoBlock/VideoBlock';
 import PosterOne from '../01-atoms/images/movie01.png';
