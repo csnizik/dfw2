@@ -26,6 +26,7 @@ import { ReactComponent as IconTopMarkets } from './icon-top-markets.svg';
 import { ReactComponent as IconTourismConfidence } from './icon-tourism-confidence.svg';
 import { ReactComponent as IconValueGap } from './icon-value-gap.svg';
 import { ReactComponent as IconWaterAdventures } from './icon-water-adventures.svg';
+import { ReactComponent as IconX } from './icon-x.svg';
 import { ReactComponent as IconZoom } from './icon-zoom.svg';
 
 const iconColor = (color) => {
@@ -397,6 +398,12 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
             iconSize(size),
             iconColor(color)
           )}
+        />
+      );
+    case 'IconX':
+      return (
+        <IconX
+          className={classNames('fill-current', iconColor(color), 'icon-x')}
         />
       );
     case 'IconZoom':
