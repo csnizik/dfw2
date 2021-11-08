@@ -8,7 +8,7 @@ const Card = ({ pathName, cardPath, transparent, ...props }) => {
         'flex',
         'flex-col',
         'h-full',
-        transparent ? 'p-0' : 'p-3',
+        transparent ? 'p-0' : 'p-5',
         transparent ? '' : 'rounded-20px',
         transparent ? '' : 'shadow-card',
         transparent ? 'bg-transparent' : 'bg-white'
