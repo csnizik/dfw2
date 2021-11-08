@@ -63,7 +63,13 @@
     height: 10px;
     transform: rotate(315deg);
   }
-
+  .expand-button {
+    margin-top: -8px;
+    margin-right: -8px;
+  }
+  .expand-drawer-button {
+    margin: 0 -8px -8px -8px;
+  }
   .menu-right {
     position: absolute;
     height: 80px;
@@ -119,5 +125,9 @@
   .video-text {
     max-height: 44px;
     overflow: hidden;
+  }
+  .icon-x {
+    width: 18px;
+    height: 18px;
   }
 }
