@@ -180,7 +180,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     pathname: '/sentiment',
                     state: {
                       videoUrl:
-                        'https://media.w3.org/2011/W3C_WAI_bcase_2011-11Nov.mp4',
+                        'https://media.w3.org/2020/08/ml-workshop/virtual-character-web-meeting.mp4',
                     },
                   }}>
                   <VideoThumbnail src={PosterThree} />
@@ -233,7 +233,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     pathname: '/sentiment',
                     state: {
                       videoUrl:
-                        'https://media.w3.org/2011/01/video/green-at-0.mp4',
+                        'https://media.w3.org/2020/08/ml-workshop/Jason_Mayes_TensorFlowJS_W3C.mp4',
                     },
                   }}>
                   <VideoThumbnail src={PosterFour} />
@@ -285,7 +285,7 @@ const FamilySentiment = ({ pathName, props }) => {
                   to={{
                     pathname: '/sentiment',
                     state: {
-                      videoUrl: 'https://media.w3.org/2009/03/W3CBetaTour.m4v',
+                      videoUrl: 'https://media.w3.org/2019/08/meig-2019-08-06.mp4',
                     },
                   }}>
                   <VideoThumbnail src={PosterFive} />
@@ -338,7 +338,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     pathname: '/sentiment',
                     state: {
                       videoUrl:
-                        'https://media.w3.org/2010/05/sintel/trailer_hd.mp4',
+                        'https://media.w3.org/2017/01/webrtc-20170125.mp4	',
                     },
                   }}>
                   <VideoThumbnail src={PosterSix} />
@@ -391,7 +391,7 @@ const FamilySentiment = ({ pathName, props }) => {
                     pathname: '/sentiment',
                     state: {
                       videoUrl:
-                        'https://media.w3.org/2010/05/sintel/trailer_hd.mp4',
+                        'https://media.w3.org/2020/08/ml-workshop/Chai_Chaoweeraprasit.mp4',
                     },
                   }}>
                   <VideoThumbnail src={PosterSeven} />
@@ -443,7 +443,7 @@ const FamilySentiment = ({ pathName, props }) => {
                   to={{
                     pathname: '/sentiment',
                     state: {
-                      videoUrl: 'https://media.w3.org/2010/05/bunny/movie.mp4',
+                      videoUrl: 'https://media.w3.org/2020/08/ml-workshop/onnxjs.mp4',
                     },
                   }}>
                   <VideoThumbnail src={PosterEight} />
