@@ -32,7 +32,7 @@ const AtAGlance = () => {
                 'lg:justify-between',
                 '-space-x-2',
                 'lg:space-0',
-                'items-center'
+                'items-center','pt-2','lg:pt-0'
               )}>
               <Metric value="12.7%" trend="up" />
               <div
@@ -76,7 +76,7 @@ const AtAGlance = () => {
                 'lg:justify-between',
                 '-space-x-2',
                 'lg:space-0',
-                'items-center'
+                'items-center','pt-3','lg:pt-0'
               )}>
               <Metric value="12.4%" trend="down" />
               <div
@@ -123,7 +123,7 @@ const AtAGlance = () => {
                 'lg:justify-between',
                 '-space-x-2',
                 'lg:space-0',
-                'items-center'
+                'items-center','pt-2','lg:pt-0'
               )}>
               <Metric value="0.6%" trend="up" />
               <div

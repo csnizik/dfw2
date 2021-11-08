@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 import { ReactComponent as Arrow } from './icon-arrow.svg';
+import { ReactComponent as ArrowUp } from './icon-arrow-up.svg';
+import { ReactComponent as ArrowDown } from './icon-arrow-down.svg'
 import { ReactComponent as Dashboard } from './dashboard.svg';
 import { ReactComponent as Download } from './download.svg';
 import { ReactComponent as Graph } from './graph.svg';
@@ -88,13 +90,11 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
   switch (type) {
     case 'ArrowDown':
       return (
-        <Arrow
+        <ArrowDown
           className={classNames(
             'fill-current',
-            'rotate-90',
             'transform',
             iconSize(size),
-            color && iconColor(color),
             classes
           )}
         />
@@ -125,13 +125,12 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
       );
     case 'ArrowUp':
       return (
-        <Arrow
+        <ArrowUp
           className={classNames(
             'fill-current',
-            '-rotate-90',
+            'rotate-180',
             'transform',
             iconSize(size),
-            iconColor(color),
             classes
           )}
         />

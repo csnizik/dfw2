@@ -401,7 +401,7 @@ function Sidebar({ pathName }) {
             'pt-8',
             'mx-2',
             'items-center',
-            'justify-center',
+            'justify-end',
             sidebarOpen ? 'block' : 'download-button'
           )}>
           <p className={classNames('text-white', 'sm:block','font-serif')}>PDF Report</p>

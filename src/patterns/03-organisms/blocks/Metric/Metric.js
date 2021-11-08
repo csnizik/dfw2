@@ -29,6 +29,7 @@ const Metric = ({ value, trend, size, ...props }) => {
             <Icon
               size='Medium'
               type={trend === 'up' ? 'ArrowUp' : 'ArrowDown'}
+              color={trend === 'up' ? 'green' : 'red'}
             />
           )}
         </div>
@@ -37,6 +38,7 @@ const Metric = ({ value, trend, size, ...props }) => {
             <Icon
               size='xs'
               type={trend === 'up' ? 'ArrowUp' : 'ArrowDown'}
+              color={trend === 'up' ? 'green' : 'red'}
             />
           )}
         </div>
