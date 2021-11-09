@@ -94,6 +94,9 @@
   .menu-250 {
     width: 250px;
   }
+  .menu-80 {
+    max-width: 250px;
+  }
   @media (max-width: 639px) {
     .menu-80 {
       width: 80px;

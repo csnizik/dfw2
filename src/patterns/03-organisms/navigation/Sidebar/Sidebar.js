@@ -66,7 +66,6 @@ function Sidebar({ pathName }) {
           'fixed',
           'inline',
           'h-full',
-          'sm:relative',
           'inset-0',
           'bg-blue-dark',
           'z-30',
@@ -396,6 +395,8 @@ function Sidebar({ pathName }) {
         </ul>
         <div
           className={classNames(
+            'sm:flex-grow',
+            'mb-6',
             'flex',
             'flex-col',
             'pt-8',
@@ -432,6 +433,7 @@ function Sidebar({ pathName }) {
         </div>
         <div
           className={classNames(
+            'sm:hidden',
             'flex-grow',
             'flex',
             'flex-col',
