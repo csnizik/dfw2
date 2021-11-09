@@ -39,7 +39,7 @@ const InfoCard = ({ card }) => {
           <div
             className={classNames('cursor-pointer')}
             onClick={() => setCardExpanded(!cardExpanded)}>
-            <Icon type="ArrowDown" size="m" color="black" />
+            <Icon type="ArrowRight" size="m" color="black" />
           </div>
         </button>
       </div>

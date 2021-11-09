@@ -23,8 +23,9 @@ const TopMarkets = ({ pathName }) => {
         />
         {pathName === '/markets' && (
           <>
-            <div className={classNames('hed3', '-mt-3')}>
-              2020 Prime (Oct-March)
+            <div className={classNames('-mt-3')}>
+              <span className={classNames('hed2')}>2020 Prime</span>{' '}
+              <span className={classNames('hed3')}>(Oct-March)</span>
             </div>
             {/* <div className={classNames('w-64', 'self-center')}>
               <InputSlider />
@@ -94,13 +95,28 @@ const TopMarkets = ({ pathName }) => {
                 contents: [
                   { title: 'Atlanta', data: <Table title="Atlanta" /> },
                   { title: 'Dallas/Ft.Worth', data: <Table title="DFW" /> },
+                  { title: 'Nashville', data: <Table title="Nashville" /> },
+                  { title: 'Saint Louis', data: <Table title="Saint Louis" /> },
                 ],
               },
               {
                 title: 'Secondary Markets',
                 contents: [
                   { title: 'Chicago', data: <Table title="Chicago" /> },
+                  { title: 'Cincinnati', data: <Table title="Cincinnati" /> },
                   { title: 'Detroit', data: <Table title="Detroit" /> },
+                  {
+                    title: 'Indianapolis',
+                    data: <Table title="Indianapolis" />,
+                  },
+                  {
+                    title: 'Minneapolis/Saint Paul',
+                    data: <Table title="Minneapolis/Saint Paul" />,
+                  },
+                  {
+                    title: 'Washington, DC',
+                    data: <Table title="Washington, DC" />,
+                  },
                 ],
               },
             ]}

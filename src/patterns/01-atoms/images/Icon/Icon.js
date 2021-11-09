@@ -117,6 +117,8 @@ const renderIcon = ({ type, size, color, classes, ...props }) => {
         <Arrow
           className={classNames(
             'fill-current',
+            'rotate-90',
+            'transform',
             iconSize(size),
             color && iconColor(color),
             classes

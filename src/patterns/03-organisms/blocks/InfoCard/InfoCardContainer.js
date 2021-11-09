@@ -13,7 +13,7 @@ function renderGroup(group) {
         'space-y-4',
         'py-4',
         'col-span-2',
-        'lg:col-span-1'
+        'md:col-span-1'
       )}>
       <h2 className={classNames('hed2')}>{group.title}</h2>
       <InfoCardGroup cards={group.contents} />
