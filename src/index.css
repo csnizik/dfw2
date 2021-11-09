@@ -52,13 +52,13 @@
   .speech-bubble::after {
     position: absolute;
     content: '';
-    right: 6px;
+    right: 8px;
   }
   .speech-bubble-tail::after {
     border-top: 1px solid rgba(229, 229, 229, 1);
     border-right: 1px solid rgba(229, 229, 229, 1);
     background-color: rgba(247, 251, 249, 1);
-    left: 85%;
+    left:123px;
     top: -6px;
     width: 10px;
     height: 10px;
@@ -145,13 +145,13 @@
     height: 10px;
     background: #afe1e2;
     border-radius: 10px;
-    margin: 0 10px
+    margin: 0 10px;
   }
   input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;
-    background:#124168;
-    height:20px;
-    width:20px;
+    background: #124168;
+    height: 20px;
+    width: 20px;
     border-radius: 20px;
   }
 }

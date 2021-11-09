@@ -34,12 +34,13 @@ function Header({ pathName }) {
       <div
         className={classNames(
           'flex',
-          'items-end',
+          'items-center',
           'justify-end',
           'sm:justify-between',
           'h-12',
           'mb-1',
-          'mt-2',
+          'mt-0',
+          'sm:mt-2',
           'sm:-mb-px',
           '-ml-20',
           'sm:ml-0',
