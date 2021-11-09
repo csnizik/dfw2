@@ -2,7 +2,7 @@ import classNames from 'classnames';
 // import React, { useState } from 'react';
 import React from 'react';
 import Chart from '../03-organisms/blocks/Chart/Chart';
-// import InputSlider from '../03-organisms/components/InputSlider/InputSlider';
+import InputSlider from '../03-organisms/components/InputSlider/InputSlider';
 import Table from '../03-organisms/blocks/Table/Table';
 import Card from '../03-organisms/blocks/Card/Card';
 import InfoCardContainer from '../03-organisms/blocks/InfoCard/InfoCardContainer';
@@ -23,18 +23,18 @@ const TopMarkets = ({ pathName }) => {
         />
         {pathName === '/markets' && (
           <>
-            <div className={classNames('-mt-3')}>
+            <div className={classNames('-mt-6')}>
               <span className={classNames('hed2')}>2020 Prime</span>{' '}
               <span className={classNames('hed3')}>(Oct-March)</span>
             </div>
-            {/* <div className={classNames('w-64', 'self-center')}>
+            <div className={classNames('w-64', 'self-center','mt-2','xl:-mt-6')}>
               <InputSlider />
-          </div> */}
-            <img
+          </div>
+            {/* <img
               className={classNames('h-7', 'mx-auto')}
               src={SliderPlaceholder}
               alt="placeholder"
-            />
+            /> */}
           </>
         )}
         <div
