@@ -30,11 +30,6 @@ const TopMarkets = ({ pathName }) => {
             <div className={classNames('w-64', 'self-center','mt-2','xl:-mt-6')}>
               <InputSlider />
           </div>
-            {/* <img
-              className={classNames('h-7', 'mx-auto')}
-              src={SliderPlaceholder}
-              alt="placeholder"
-            /> */}
           </>
         )}
         <div
