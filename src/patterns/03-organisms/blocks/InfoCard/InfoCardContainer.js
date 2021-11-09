@@ -11,9 +11,9 @@ function renderGroup(group) {
         'flex-col',
         'justify-start',
         'space-y-4',
-        'py-4',
         'col-span-2',
-        'md:col-span-1'
+        'md:col-span-1',
+        'py-4',
       )}>
       <h2 className={classNames('hed2')}>{group.title}</h2>
       <InfoCardGroup cards={group.contents} />
