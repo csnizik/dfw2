@@ -98,12 +98,11 @@ function UserMenu({ children, ...rest }) {
         show={dropdownOpen}
         tag="div"
         className={classNames(
-          'origin-top-right',
-          'absolute',
+          'origin-top',
+          'fixed',
           'z-50',
           'top-0',
-          '-right-1',
-          
+          'right-0',
           'bg-teal',
           'rounded-l-3xl',
           'shadow-card',
@@ -115,7 +114,7 @@ function UserMenu({ children, ...rest }) {
         enter={classNames(
           'transition',
           'ease-out',
-          'duration-200',
+          'duration-100',
           'transform'
         )}
         enterStart={classNames('opacity-0', '-translate-y-2')}
