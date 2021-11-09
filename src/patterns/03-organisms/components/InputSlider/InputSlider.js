@@ -6,11 +6,11 @@ const InputSlider = () => {
   return (
     <div className={classNames('flex', 'flex-row', 'justify-center', 'items-center')}>
       
-        <div className={classNames('text-base')}>2022</div>
+        <div className={classNames('text-base')}>2021</div>
       <form>
-        <input type="range" id="year" name="year" />
+        <input type="range" id="year" name="year" min="0" max="2" defaultValue="1" step="1" />
       </form>
-        <div className={classNames('text-base')}>2020</div>
+        <div className={classNames('text-base')}>2019</div>
     </div>
   );
 };
