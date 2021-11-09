@@ -22,12 +22,11 @@ function renderGroup(group) {
 }
 
 const InfoCardContainer = ({ cardGroups }) => {
-  const numCols = cardGroups.length > 1 ? '2' : '1';
   return (
     <div
       className={classNames(
         'grid',
-        `grid-cols-${numCols}`,
+        'grid-cols-2',
         'gap-8',
       )}>
       {cardGroups.map((group) => renderGroup(group))}
