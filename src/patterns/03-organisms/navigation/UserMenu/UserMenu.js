@@ -103,15 +103,14 @@ function UserMenu({ children, ...rest }) {
           'z-50',
           'top-0',
           '-right-1',
-          'w-80',
-          'sm:w-80',
-          'h-1/4',
+          
           'bg-teal',
           'rounded-l-3xl',
           'shadow-card',
           'overflow-hidden',
           'p-5',
-          'flex'
+          'flex',
+          'user-menu'
         )}
         enter={classNames(
           'transition',

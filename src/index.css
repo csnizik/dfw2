@@ -154,4 +154,8 @@
     width: 20px;
     border-radius: 20px;
   }
+  .user-menu {
+    width: 320px;
+    height: 451px;
+  }
 }
